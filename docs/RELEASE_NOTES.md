@@ -1,5 +1,29 @@
 # 공개본 기록
 
+## 2026-09-29: README 구조 재정리
+
+공개 README를 기능 설명서 중심에서 **처음 방문한 사용자 중심**으로 재구성했습니다.
+
+구조 결정 시 공개 저장소의 README를 직접 확인했습니다:
+- `Yeachan-Heo/oh-my-claudecode`: 한 줄 가치 제안과 빠른 시작을 앞에 배치하는 구조
+- `code-yeongyu/oh-my-openagent`: 짧은 설치와 `Why` 중심 차별화 설명
+- `assafelovic/gpt-researcher`: 구체적인 산출물, 문서 연결, benchmark 주장과 검증 근거 분리
+- `stanford-oval/storm`: Overview → How it works → 한계 공개
+- `Hainrixz/maia-skill`: 결과물/요구사항/설치/한계 분리
+- `shipblueprint/deep-market-research-agent`: "What you get"과 이해하기 쉬운 조사 단계
+
+FieldPilot에는 그대로 복제하지 않고 다음만 적용했습니다:
+- 첫 화면에서 문제와 가치가 보이도록 축약
+- `왜 FieldPilot인가`를 기능 목록보다 먼저 설명
+- 외부 파일럿 피드백을 강점/약점과 함께 정성 신호로 공개
+- 설치와 첫 질문을 앞쪽으로 이동
+- Quality Max 정책을 사용자 언어로 설명
+- 고급 기능은 `docs/FEATURE_GUIDE.md`로 분리
+- README 구조 근거는 `docs/README_REFERENCES.md`에 기록
+- 일반 AI 대비 우월성, WTP, 시장 전체 선호는 계속 미검증으로 표시
+
+이 변경은 문서/포지셔닝 개선이며 FieldPilot의 연구 성능을 새로 입증한 것이 아닙니다.
+
 ## 2026-09-29: quality-max-01 품질 우선 시험본
 
 외부 파일럿 피드백 두 건이 같은 방향을 가리켰습니다. 사용량이 줄어든 점은 확인됐지만, 그만큼 결과가 덜 풍부하게 느껴지고 일반 ChatGPT와 차이가 작게 느껴진다는 의견이 있었습니다. 반대로 가장 좋은 점으로는 모르고 있던 겹치는 장르·카테고리와 비슷한 제품을 찾아내고, 겹치는 요소별 대표 사례를 비교해 주는 능력이 반복해서 언급됐습니다.
