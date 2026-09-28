@@ -1,5 +1,22 @@
 # FieldPilot Changelog
 
+## quality-max-01 — Quality Before Usage
+
+Based on convergent external pilot feedback, FieldPilot no longer treats usage/output reduction as a primary success target.
+
+- Added `references/modules/QUALITY_MAXIMUM_PERFORMANCE.md`.
+- Added `quality_extension_revision: "quality-max-01"` to the kernel metadata.
+- Quality priority is now: truth/provenance → decision-critical coverage → high-recall competitor/substitute/reference discovery → comparison specificity → decision usefulness → efficiency.
+- Efficiency removes duplicate searches, repeated entities, unchanged rereads and empty prose, but may not remove material competitors, overlap dimensions, contradictions, representative references or decision-changing detail.
+- Added overlap decomposition across job, workflow, mechanic/behavior, genre/category, aesthetic/tone, progression/retention, price/model, channel/platform and other task-fit dimensions.
+- Added representative-reference mapping for direct competitors, substitutes, adjacent references, component analogues and cross-category references.
+- Expanded discovery facets beyond direct category/substitute/adjacent to component/mechanic analogues, cross-category references and marketplace/community vocabulary.
+- Changed ordinary output from "compression" to a decision-first architecture that preserves useful competitor/reference comparisons and non-obvious discoveries.
+- Added a customer-visible differentiation check: when broad findings look like a generic general-AI first pass, improve the investigation rather than add decorative framework prose.
+- Recorded the external pilot signal in `references/development/HUMAN_PILOT_QUALITY_VS_USAGE_2026-09-29.md` with a strict claim ceiling.
+
+This change does not establish commercial superiority, WTP, market-wide preference, or exact token savings. External clean-session comparison remains required.
+
 ## v1.9.9-rc04 — Prompt-Skill Independence (candidate)
 
 Product requirement: a buyer who does not know research vocabulary or prompt writing must not get a shallower investigation, weaker evidence, a worse judgment, more questions or more homework than a buyer who does. "개떡같이 말해도 찰떡같이 알아듣습니다" is now a runtime contract.
