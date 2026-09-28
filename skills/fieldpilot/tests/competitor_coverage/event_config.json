@@ -1,0 +1,7 @@
+{
+  "steps": ["signup", "checkout", "pay"],
+  "window_hours": 24,
+  "cutoff": "2026-01-05T00:00:00Z",
+  "retention_event": "return",
+  "retention_day": 1
+}
