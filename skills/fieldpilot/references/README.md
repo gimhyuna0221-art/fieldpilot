@@ -18,6 +18,12 @@
 - `modules/PROMPT_SKILL_INDEPENDENCE.md` — 모든 경로(A–E)에서 가장 먼저 적용한다. 사용자의 말(짧은 말·오타·반말·감정·여러 질문)을 사례(CASE_FRAME)로 복원하고, 조사 바닥선을 말투가 아니라 사례 상태로 정하며, 질문은 QUESTION_GATE 하나로만 결정한다(찾을 수 있으면 찾고, 추론할 수 있으면 가정으로 밝히고, 먼저 답한 뒤 끝에 최대 2개 질문). 전달은 쉬운 말이 기본이며, 보내기 전 전문가 쌍둥이 점검을 한다.
 - 흩어져 있던 질문 규칙(지리·단계·범위·제품 사실·수익 모델 등)은 이 게이트를 따르도록 정렬했다.
 
+## Market anchor & expansion — market-anchor-01
+
+- `modules/MARKET_ANCHOR_AND_EXPANSION.md` — 사용자가 국가를 매번 적지 않아도 명시 시장·제품 단서·언어 순으로 잠정 시장 앵커를 잡고, `Local-first → Global-best → Local-transfer` 순서로 조사한다.
+- 한국어는 더 강한 반대 단서가 없을 때 한국을 잠정 1차 검색시장으로 쓸 수 있지만 한국 관할권을 확정하지 않는다. 영어·스페인어 등 다국가 언어는 특정 국가가 아니라 언어권 클러스터로 시작한다.
+- 해외 가격·시장규모·성공사례는 로컬 구매력·플랫폼·규제·워크플로 전이 검문 없이 로컬 증거로 승격하지 않는다.
+
 ## Industry depth backstop — industry-depth-backstop-02
 
 - `modules/INDUSTRY_DEPTH_BACKSTOP.md` — 넓은 시장·사업성·진입 판단에서 제품/대체재 중심 결론이 일반 심층리서치보다 산업 맥락을 놓치지 않게 하는 조건부 백스톱이다.

@@ -63,10 +63,12 @@ For the active geography, proportionately close the relevant classes:
 
 For Korea, route the local source/channel details through `../modules/KOREA_LOCAL_DISTRIBUTION.md`.
 
-If geography is unresolved:
-- do not infer it from conversation language or owner location;
-- mark the affected competitor coverage `LOCAL_GEOGRAPHY_NOT_CHECKED` or `GEOGRAPHY_UNRESOLVED`;
-- if the missing geography can change the recommendation, lower the affected claim ceiling, finish the bounded answer, and ask the one geography question at its end (QUESTION_GATE `ASK_AFTER` in `../modules/PROMPT_SKILL_INDEPENDENCE.md`).
+If geography is unresolved, route through `../modules/MARKET_ANCHOR_AND_EXPANSION.md` before falling back to a geography-neutral map:
+- explicit/verified local evidence sets the local market;
+- a defensible language prior may set a provisional local/language search order but never establishes jurisdiction;
+- English and other multinational languages use a language cluster rather than defaulting to one country;
+- mark the affected conclusions `PROVISIONAL_MARKET_ANCHOR`, `LOCAL_GEOGRAPHY_NOT_CHECKED` or `GEOGRAPHY_UNRESOLVED` as appropriate;
+- if ambiguity still can change the recommendation after local-first/global-best/transfer checks, lower the affected claim ceiling, finish the bounded answer, and ask the one geography question at its end (QUESTION_GATE `ASK_AFTER`).
 
 A local search miss is `LOCAL_DIRECT_SEARCHED_NOT_FOUND`, not "no local competitor" and not `CONFIRMED_GAP`.
 

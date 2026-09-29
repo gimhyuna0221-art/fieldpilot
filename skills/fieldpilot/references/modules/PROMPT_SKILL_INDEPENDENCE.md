@@ -58,8 +58,9 @@ CASE_FRAME
   PREMISES_TO_CHECK    solutions the user presumes: ads, more features, a price cut, a pivot
   EXPLICIT_LIMITS      scope, length or format limits the user actually stated
   DELIVERABLE          explicit request for comprehensive research or a report: yes / no
-  GEOGRAPHY            STATED / ESTABLISHED_BY_PRODUCT_SCOPE / UNRESOLVED
-                       (never from conversation language, owner location or account)
+  GEOGRAPHY            STATED / ESTABLISHED_BY_PRODUCT_SCOPE / STRONG_LOCAL_SIGNAL /
+                       PROVISIONAL_LANGUAGE_MARKET / LANGUAGE_CLUSTER / GLOBAL_UNRESOLVED
+                       + anchor source and confidence. Language sets search priority only; it does not prove jurisdiction.
   MISSING_FACTS        each classified FINDABLE / INFERABLE / USER_OWNED (§3)
   REGISTER             the user's vocabulary level — affects delivery only, never depth
   WORRY                e.g. discouraged, rushed, defensive — answered directly, never padded
@@ -135,7 +136,7 @@ it may not be silently absent. If a row cannot be supported now, say so in one l
 | POST_LAUNCH | launched with weak or no response — whatever the wording | symptom, competing causes (reach, message, channel, landing, activation, retention, payment, reliability, measurement, and "they already use something else" via ALTERNATIVES), measurement health, cheapest discriminating test |
 | PAYMENT | interest without payment | payment-path health, user vs payer, packaging, trust, first paid proof or HOLD |
 | CHANNEL | a promotion/channel question, or reach/channel is a leading cause after diagnosis | one first route + one fallback + exact test + what to measure + geography dependency |
-| LOCAL | geography stated or established by product scope, and material | the local closure in `KOREA_LOCAL_DISTRIBUTION.md` / `secondary-and-competitors.md` |
+| LOCAL | geography stated/established, or a provisional market/language anchor is useful and material | resolve through `MARKET_ANCHOR_AND_EXPANSION.md`; full local closure when the market is established, provisional local-first discovery when it is language-anchored |
 | DELTA | returning evidence | what changed, what stayed stable, updated decision |
 | NARROW | an explicit user scope limit | every literal requested field/entity pair closed as supported or honestly blocked; current official/primary routes for an UNKNOWN requested field are exhausted before sending; no adjacent analysis |
 | FULL | an explicit comprehensive research or report request, in any words | Route B package |
@@ -198,11 +199,7 @@ into a question or homework for the user.
 - to choose a direct-research method before the answer. Route B's method choice is a post-answer
   option; silence keeps `SKIPPED` = not tested, never negative evidence.
 
-**Geography.** Never infer it from language, owner location or account. If it is unresolved and
-material, use ASK_AFTER: answer with geography-neutral evidence, keep `GEOGRAPHY_UNRESOLVED`, name the
-local dependency and which conclusions it limits, and ask the single geography question at the end.
-Geography alone never blocks the first answer. When the user answers later, run the local closure as
-a returning-evidence delta that changes only geography-dependent parts.
+**Geography / market anchor.** Do not treat language as confirmed geography, but do use it to avoid unnecessary intake questions. Resolve the market anchor through `MARKET_ANCHOR_AND_EXPANSION.md`: explicit market → verified product/store/contract scope → strong case-relevant local signal → provisional language market → language cluster → global unresolved. Korean may start with a provisional South Korea search pass; English never defaults to the United States and instead uses an English-speaking/global cluster. Do useful local/language-first research, expand to global-best references, and apply the local-transfer gate. Ask a geography question only at the end when the remaining ambiguity can still materially reverse the recommendation and accessible evidence cannot resolve it. Account/device/physical location and remembered owner location are never anchors. When the user later names another market, update only geography-dependent parts.
 
 **Stage.** Infer it from the wording and evidence ("만들었는데" → built; "출시했는데 / 올렸는데 아무도
 안 써" → launched with no or low response) and show the assumption. If two stages stay plausible and
@@ -213,11 +210,7 @@ stage unless ASK_FIRST applies.
 questions over several turns. A question answered "몰라 / 없음 / 정해진 것 없음" is not asked again:
 proceed with UNKNOWN.
 
-**Anti-pattern: the blocking market question.** First turn = "Which market is this aimed at?" and
-nothing else, for a case that is otherwise identifiable. This is wrong under the gate: the full
-bounded answer was possible, and a reply of "not specified" would add no information while costing
-the user a turn. Correct: the full answer with `GEOGRAPHY_UNRESOLVED` stated in plain words, then the
-geography question as the last line.
+**Anti-pattern: the blocking market question.** First turn = "Which market is this aimed at?" and nothing else, for a case that is otherwise identifiable. This is wrong under the gate. Correct: resolve the strongest provisional market anchor, research that first, expand globally, and disclose the provisional anchor in one short line only when it materially affects the answer. Ask the country only at the end if the unresolved geography can still flip the decision.
 
 ## 4. FRIENDLY_EXPERT delivery — the default for every user
 
@@ -301,7 +294,7 @@ market). Then check the draft:
   modules, and the default delivery register.
 - It never overrides: truth before fluency, UNKNOWN, provenance, counterevidence, competitor recall
   and gap safeguards, commercial/WTP claim ceilings, product-state honesty, coverage honesty, the
-  geography no-guessing rule, approval gates for external execution, explicit user limits, the full
+  market-anchor claim ceiling (language is a prior, not geography proof), approval gates for external execution, explicit user limits, the full
   professional route, returning-evidence continuity, or the role boundary (FieldPilot does not edit
   code).
 - It adds no score, no guaranteed outcome, no new mandatory research, and no universal question count

@@ -135,7 +135,7 @@ class PromptSkillIndependenceContract(unittest.TestCase):
                        "explicitly asks to be asked first", "ASK_FIRST ≤ 2 questions, ASK_AFTER ≤ 2 questions",
                        "Never drip-feed", "is not asked again"]:
             self.assertIn(marker, gate)
-        never = gate.split("**Never ask**")[1].split("**Geography.**")[0]
+        never = gate.split("**Never ask**")[1].split("**Geography / market anchor.**")[0]
         for item in ["analysis, mode, framework, depth, research areas or output format",
                      "permission to start research", "anything FINDABLE",
                      "define the decision, decision owner, deadline, success metric or target customer",
@@ -144,15 +144,15 @@ class PromptSkillIndependenceContract(unittest.TestCase):
             self.assertIn(item, never)
         self.assertIn("never turns into a question or homework", gate)
 
-    def test_rc03_blocking_geography_antipattern_is_named_and_forbidden(self):
+    def test_blocking_geography_question_is_replaced_by_market_anchor(self):
         self.assertIn("Anti-pattern: the blocking market question", self.module)
-        # product text carries no benchmark-run references (blind benchmark hygiene)
         self.assertNotIn("clean run", self.module.lower())
-        self.assertIn("Geography alone never blocks the first answer", self.module)
-        self.assertIn("do not guess and do not stop", self.skill)
+        self.assertIn("resolve the strongest provisional market anchor", self.module)
+        self.assertIn("English never defaults to the United States", self.module)
+        self.assertIn("Market anchor before geography questions", self.skill)
         korea = read("references/modules/KOREA_LOCAL_DISTRIBUTION.md")
-        self.assertIn("Geography alone never blocks the first answer", korea)
-        self.assertIn("Do **not** infer Korea merely from", korea)  # rc02 protection kept
+        self.assertIn("PROVISIONAL_KOREA_FIRST_PASS", korea)
+        self.assertIn("Do **not** treat Korean language alone as proof of", korea)
 
     # ---- policy lint over the whole skill -------------------------------------------
     def test_policy_lint_no_disjunctive_or_pro_ask_rules_remain(self):
@@ -274,7 +274,7 @@ class PromptSkillIndependenceContract(unittest.TestCase):
             "AI-first / no homework": ("SKILL.md", "**AI-first / no homework.**"),
             "product-state honesty": ("SKILL.md", "**Product-state honesty.**"),
             "coverage honesty": ("SKILL.md", "**Coverage honesty.**"),
-            "geography no-guessing": ("SKILL.md", "Never infer the target market from the user's language"),
+            "market-anchor claim ceiling": ("SKILL.md", "Language is a search prior, never geography proof"),
             "full professional route": ("SKILL.md", "## ROUTE B — FULL / PROFESSIONAL MARKET RESEARCH"),
             "returning evidence continuity": ("SKILL.md", "`WHAT_CHANGED / WHAT_STAYED_STABLE / UPDATED_DECISION`"),
             "Korea-local coverage": ("references/modules/KOREA_LOCAL_DISTRIBUTION.md", "LOCAL_DIRECT_SEARCHED_NOT_FOUND"),
@@ -289,7 +289,7 @@ class PromptSkillIndependenceContract(unittest.TestCase):
     def test_module_never_overrides_protections(self):
         precedence = flat(self.module.split("## 6. Precedence and boundaries")[1])
         for marker in ["truth before fluency", "UNKNOWN", "provenance", "counterevidence",
-                       "commercial/WTP claim ceilings", "geography no-guessing rule",
+                       "commercial/WTP claim ceilings", "market-anchor claim ceiling",
                        "approval gates for external execution", "explicit user limits",
                        "the full professional route", "role boundary"]:
             self.assertIn(marker, precedence)
