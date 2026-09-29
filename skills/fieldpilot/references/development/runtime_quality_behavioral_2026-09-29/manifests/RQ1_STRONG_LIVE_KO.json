@@ -1,0 +1,336 @@
+{
+  "case_id": "RQ1_STRONG_LIVE_KO",
+  "candidate_commit": "f3dc869b032091d611dfa016007d2612bdd2fb03",
+  "loaded_skill_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\SKILL.md",
+  "runtime_quality_extension_revision": "runtime-quality-floor-01",
+  "market_anchor_extension_revision": "market-anchor-01",
+  "requested_model": "sonnet",
+  "resolved_models_observed": [
+    "claude-sonnet-5-5"
+  ],
+  "claude_cli_version": "2.1.284",
+  "allowed_tools": [
+    "Read",
+    "Glob",
+    "Grep",
+    "WebSearch",
+    "WebFetch"
+  ],
+  "tool_calls": [
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\SKILL.md"
+      }
+    },
+    {
+      "name": "Glob",
+      "input": {
+        "pattern": "**/*",
+        "path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\PROMPT_SKILL_INDEPENDENCE.md"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\MARKET_ANCHOR_AND_EXPANSION.md"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\RUNTIME_QUALITY_FLOOR.md"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\LIFECYCLE_DECISION_ROUTER.md"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\KOREA_LOCAL_DISTRIBUTION.md"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\DECISION_CONTINUITY.md"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\INDUSTRY_DEPTH_BACKSTOP.md"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\REFERENCE_FIRST_VALUE.md"
+      }
+    },
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\references\\modules\\REGULATORY_CONTEXT_CHECK.md"
+      }
+    },
+    {
+      "name": "Glob",
+      "input": {
+        "pattern": "**/*",
+        "path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "노쇼 방지 예약 서비스 소상공인 예약금 결제 네이버 예약 캐치테이블"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "네이버 예약 예약금 노쇼 방지 기능 사업자 수수료"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "노쇼 위약금 소비자분쟁해결기준 개정 예약 부도 2025 공정위"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "미용실 예약 노쇼 방지 앱 예약 관리 SaaS 요금 월 구독 소상공인"
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://gongbiz.kr/landing-page/deposit-management",
+        "prompt": "공비서의 예약금/노쇼 방지 기능: 어떻게 작동하는지, 수수료·요금, 대상 업종, 고객 수/도입 수치가 있으면 그대로. 페이지에 있는 내용만."
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://www.omago.ai/ko/blog/naver-booking-fees-truth-korea",
+        "prompt": "네이버 예약의 구독료, 수수료, 예약금 기능, 노쇼 관련 기능과 한계. 날짜와 출처 표기 포함."
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://news.mt.co.kr/mtview.php?no=2024121609591059346",
+        "prompt": "캐치테이블 '예약금 0원 결제' 내용: 작동 방식, 도입 배경, 노쇼 관련 수치, 가맹점 요금이 있으면."
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://www.hankyung.com/article/2025102253357",
+        "prompt": "공정위 소비자분쟁해결기준 개정 내용: 노쇼 위약금 비율, 적용 업종, 시행일. 노쇼 피해 규모 수치가 있으면 포함."
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "Fresha Square Appointments Booksy no-show protection card on file fee 2026 pricing"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "노쇼 방지 솔루션 스타트업 예약 서비스 폐업 OR 투자 OR 출시 2026"
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://www.mt.co.kr/future/2024/12/16/2024121609591059346",
+        "prompt": "캐치테이블 '예약금 0원 결제' 내용: 작동 방식(카드 등록 후 노쇼 시 자동 결제), 도입 배경, 노쇼 관련 수치, 가맹점 조건."
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://m.news.nate.com/view/20260513n31876",
+        "prompt": "예약부도(노쇼) 피해가 왜 반복되는지, 피해 규모/통계/사례, 제도 한계, 현재 대응 서비스(예약금 등) 언급."
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://tossplace.com/story/beauty_no_show",
+        "prompt": "뷰티 매장 노쇼 줄이는 방법, 노쇼 비율/통계, 예약금·알림톡 등 기능과 요금, 토스플레이스 예약 기능 여부."
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://noshowhair.com/",
+        "prompt": "이 서비스가 무엇인지, 노쇼 방지 방식, 요금, 대상, 도입 고객 수/후기가 있는지. 페이지에 있는 내용만."
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "소상공인 노쇼 피해 실태조사 비율 미용실 음식점 병원 노쇼율"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "캐치테이블 사장님 이용료 예약 건수 구간 월 33,000원 테이블링 예약 노쇼 방지 요금"
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://m.news.nate.com/view/20260101n10153",
+        "prompt": "소상공인 노쇼 피해 실태조사 결과: 조사 주체, 표본 수, 조사 시점, 피해 경험 비율, 회당 손실, 예약보증금 설정 비율, 이유, 정부 지원. 수치를 그대로."
+      }
+    },
+    {
+      "name": "WebFetch",
+      "input": {
+        "url": "https://biz.booksy.com/en-us/features/no-show-protection",
+        "prompt": "Booksy no-show protection: how it works, fees, availability by country (is Korea supported?), what data or claims about no-show reduction appear."
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "네이버 예약 예약금 설정 방법 스마트플레이스 예약보증금 환불 사업자 도움말"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "팅커뷰 OR 공비서 OR 핸드SOS 노쇼 예약금 사장님 후기 불만 수수료 정산"
+      }
+    }
+  ],
+  "retrieved_source_urls_or_ids_observed": [
+    "https://agentskills.io/specification",
+    "https://alliviews.com/%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94-%ED%85%8C%EC%9D%B4%EB%B8%94%EB%A7%81/",
+    "https://app.catchtable.co.kr/",
+    "https://apps.apple.com/KR/app/id1521817390",
+    "https://apps.apple.com/app/id1521817390",
+    "https://apps.apple.com/ch/app/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4%EC%84%BC%ED%84%B0/id1521817390?l=it",
+    "https://apps.apple.com/kr/app/%EC%9E%A0%EB%B0%94%EA%B5%AC%EB%8B%88-%ED%98%B8%ED%85%94-%ED%8E%9C%EC%85%98-%EB%AA%A8%ED%85%94-%EA%B0%90%EC%84%B1%EC%88%99%EC%86%8C-%EA%B2%8C%ED%95%98-%EC%88%99%EB%B0%95%EC%98%88%EC%95%BD/id6747261037?l=en-GB",
+    "https://apps.apple.com/kr/app/%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94/id1485193566",
+    "https://apps.apple.com/ma/app/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4%EC%84%BC%ED%84%B0/id1521817390?l=ar",
+    "https://apps.apple.com/us/app/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4%EC%84%BC%ED%84%B0/id1521817390?uo=4",
+    "https://apps.apple.com/us/app/-/id1279272773",
+    "https://bbs.ruliweb.com/community/board/300143/read/76573212",
+    "https://biz.booksy.com/en-us/features/no-show-protection",
+    "https://biz.catchtable.co.kr/",
+    "https://bkinsure.com/%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%98%88%EC%95%BD%EA%B8%88-%EC%98%88%EC%95%BD-%EB%B0%A9%EB%B2%95/",
+    "https://bookafy.com/fresha-alternatives/",
+    "https://community.squareup.com/t5/Archived-Discussions-Read-Only/Card-on-File-No-show-Protection-Appointments-how-do-they-work/td-p/20966",
+    "https://developers.google.com/actions-center/verticals/reservations/e2e/integration-steps/feeds/availability-feed/structuring-availability-data?hl=ko",
+    "https://developers.google.com/actions-center/verticals/reservations/e2e/support?hl=ko",
+    "https://developers.google.com/standard-payments/v1/fops/card/reserve-capture-flow?hl=ko",
+    "https://developers.google.com/workspace/gmail/markup/reference/types/FoodEstablishmentReservation?hl=ko",
+    "https://disquiet.io/@yeonjung/makerlog/%EC%99%B8%EC%8B%9D-%EC%95%B1%EC%97%90%EC%84%9C-%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%B4-1%EC%9C%84%EA%B0%80-%EB%90%9C-%EC%9D%B4%EC%9C%A0",
+    "https://en.wikipedia.org/wiki/Bottle_service",
+    "https://en.wikipedia.org/wiki/Subcontract_Act",
+    "https://gongbiz.kr/",
+    "https://gongbiz.kr/landing-page/deposit-management",
+    "https://handsub.com/blog/hair-salon-reservation-system-comparison",
+    "https://heybooked.com/blogs/fresha-pricing",
+    "https://knowledge.workspace.google.com/admin/billing/request-a-refund-of-remaining-credit?hl=ko",
+    "https://koreaissuejournal.co.kr/news/newsview.php?ncode=1065585699533441",
+    "https://lawinsider.com/ko/clause/예약의-조건",
+    "https://m.news.nate.com/view/20240307n29917",
+    "https://m.news.nate.com/view/20251218n27060",
+    "https://m.news.nate.com/view/20251218n33413",
+    "https://m.news.nate.com/view/20251218n33588",
+    "https://m.news.nate.com/view/20251218n37094",
+    "https://m.news.nate.com/view/20260101n09696",
+    "https://m.news.nate.com/view/20260101n10153",
+    "https://m.news.nate.com/view/20260101n10153)이었습니다",
+    "https://m.news.nate.com/view/20260101n10447",
+    "https://m.news.nate.com/view/20260101n10447)이라는",
+    "https://m.news.nate.com/view/20260101n12755",
+    "https://m.news.nate.com/view/20260101n13634",
+    "https://m.news.nate.com/view/20260101n18435",
+    "https://m.news.nate.com/view/20260412n03108",
+    "https://m.news.nate.com/view/20260513n31876",
+    "https://maily.so/marketingrecipe/posts/xyowdg78z28",
+    "https://namu.wiki/w/%EB%84%A4%EC%9D%B4%EB%B2%84%20%EC%98%88%EC%95%BD",
+    "https://namu.wiki/w/%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94",
+    "https://news.airbnb.com/?p=232816",
+    "https://news.mt.co.kr/mtview.php?no=2024121609591059346",
+    "https://noshowhair.com/",
+    "https://nova-lab.dev/blog/restaurant-reservation-link",
+    "https://patents.google.com/patent/KR20220140680A",
+    "https://play.google.com/store/apps/details?id=co.kr.catchtable.android.catchtable_app&hl=en_US",
+    "https://plus.catchtable.co.kr/guide/waiting1/?ch=1",
+    "https://raonblog.com/%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%9B%A8%EC%9D%B4%ED%8C%85-%EB%B0%A9%EB%B2%95-%EC%98%88%EC%95%BD-%EA%BF%80%ED%8C%81-%EC%98%88%EC%95%BD%EA%B8%88-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/",
+    "https://simplybook.me/ko/scheduling-system-for-hair-and-beauty-services",
+    "https://solovi.co.uk/blog/fresha-vs-booksy-uk",
+    "https://startup-kit.co.kr/bbs/board.php?bo_table=free&wr_id=2654&page=82",
+    "https://startuprecipe.co.kr/archives/5823745",
+    "https://startuprecipe.co.kr/archives/5835394",
+    "https://startuprecipe.co.kr/archives/invest-report/5808078",
+    "https://startuprecipe.co.kr/archives/invest-report/5811742",
+    "https://startuprecipe.co.kr/archives/invest-report/5819126",
+    "https://startuprecipe.co.kr/archives/invest-report/5823990",
+    "https://startuprecipe.co.kr/archives/invest-report/5828067",
+    "https://theqoo.net/hot/4274414027",
+    "https://tossplace.com/story/beauty_no_show",
+    "https://twizzlo.com/articles/fresha-vs-booksy/",
+    "https://uogaweb.com/squarespace-design-insights/salon-website-booking-system",
+    "https://v.daum.net/v/7bMBjDV75O",
+    "https://v.daum.net/v/qjNxsmFLQ3",
+    "https://www.ajunews.com/view/20230222130047601",
+    "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+    "https://www.clien.net/service/board/park/13731758",
+    "https://www.da-val.com/cases/hairshop-reservation",
+    "https://www.dailian.co.kr/news/view/1441584/%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94-%ED%98%81%EC%8B%A0-%EC%84%9C%EB%B9%84%EC%8A%A4-%E2%80%98%EC%98%88%EC%95%BD%EA%B8%88-0%EC%9B%90-2024",
+    "https://www.dhilbo.co.kr/news/articleView.html?idxno=1180",
+    "https://www.fresha.com/pricing",
+    "https://www.goodcall.com/appointment-scheduling-software/fresha-vs-booksy",
+    "https://www.hankyung.com/article/2024121604781",
+    "https://www.hankyung.com/article/2025102253357",
+    "https://www.jobplanet.co.kr/contents/news-5682",
+    "https://www.jobplanet.co.kr/contents/news-5682/%EC%9B%A8%EC%9D%B4%ED%8C%85%EC%95%B1-%EC%BA%90%EC%B9%98%ED%85%8C%EC%9D%B4%EB%B8%94-vs-%ED%85%8C%EC%9D%B4%EB%B8%94%EB%A7%81-%EB%88%84%EA%B0%80-%EB%8D%94-%EC%9E%98%EB%82%98%EA%B0%80%EB%82%98",
+    "https://www.kmib.co.kr/article/view.asp?arcid=0019865264",
+    "https://www.mhlw.go.jp/file/06-Seisakujouhou-10800000-Iseikyoku/0000212668.pdf",
+    "https://www.mhlw.go.jp/file/06-Seisakujouhou-10800000-Iseikyoku/0000212669.pdf",
+    "https://www.mt.co.kr/future/2024/12/16/2024121609591059346",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9334196/",
+    "https://www.nextunicorn.kr/en",
+    "https://www.omago.ai/ko/blog/naver-booking-fees-truth-korea",
+    "https://www.sba.gov/counseling/plan-your-business/#market-research",
+    "https://www.storeartmagazine.com/news/articleView.html?idxno=602",
+    "https://www.tech42.co.kr/10%EA%B0%9C-%EC%A4%91-9%EA%B0%9C-%EC%82%AC%EB%9D%BC%EC%A7%84%EB%8B%A4-%EC%B0%BD%EC%97%85-%EB%B9%99%ED%95%98%EA%B8%B0-%EC%86%8D-%EC%82%B4%EC%95%84%EB%82%A8%EA%B8%B0-%EC%A0%84%EC%9F%81/",
+    "https://www.techdaily.co.kr/news/articleView.html?idxno=25709",
+    "https://www.thescoop.co.kr/news/articleView.html?idxno=58633",
+    "https://www.threads.com/@nakwonsoba/post/DFNLsnkzOlw?hl=en",
+    "https://www.threads.com/@sang9_boy/post/DIf_wr_Jz9p/%EC%98%88%EC%95%BD%EC%A0%84%ED%99%94%EA%B0%80-%EC%99%94%EB%8B%A4-20%EB%AA%85-%EC%98%88%EC%95%BD%ED%95%9C%EB%8B%A4%EA%B3%A0%ED%95%B4%EC%84%9C-%EC%98%88%EC%95%BD%EC%9D%84-%EB%B0%9B%EA%B3%A0%EC%A0%84%ED%99%94%EB%81%8A%EA%B8%B0%EC%A0%84-%EB%82%B4-%EB%B2%88%ED%98%B8%EB%A5%BC-%EB%AC%BC%EC%96%B4%EB%B3%B4%EC%85%A8%EB%8B%A4%EA%B7%B8%EB%A6%AC%EA%B3%A0-5%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-%EB%B9%84%EC%9B%8C%EB%86%A8%EB%8B%A4-%EB%85%B8%EC%87%BC%EC%98%80%EB%8B%A4-%EC%A0%84%ED%99%94%EB%8F%84-%EC%95%88%EB%B0%9B%EC%9C%BC%EC%8B%A0%EB%8B%A4%EA%B7%B8%EB%92%A4%EB%B6%80%ED%84%B0-%EA%B0%9C%EC%9D%B8",
+    "https://www.ytn.co.kr/_ln/0102_202512181037255321"
+  ],
+  "start_time": "2026-09-30T00:07:23.250874+09:00",
+  "end_time": "2026-09-30T00:09:34.648639+09:00",
+  "raw_reply_sha256": "ffc51ab3e0fbca951f8411ad39a846abf755b162a053bbfbe78d48828a607d40",
+  "return_code": 0,
+  "execution_error": null,
+  "contaminated": false,
+  "path_ok": true,
+  "runtime_revision_ok": true,
+  "market_revision_ok": true
+}
