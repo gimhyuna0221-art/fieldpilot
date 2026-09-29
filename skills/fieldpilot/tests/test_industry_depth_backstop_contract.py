@@ -114,7 +114,7 @@ class IndustryDepthBackstopContract(unittest.TestCase):
     def test_single_case_evidence_boundary(self):
         self.assertIn("controlled model benchmark", self.dev)
         self.assertIn("does not prove", self.dev)
-        self.assertIn("Clean-session multi-task comparison", (ROOT / "CHANGELOG.md").read_text(encoding="utf-8"))
+        self.assertIn("R2 clean-session blind testing", (ROOT / "CHANGELOG.md").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

@@ -26,7 +26,18 @@ Added after a same-topic comparison showed a useful asymmetry: the general deep-
 - Added `references/development/GENERAL_RESEARCH_VS_FIELDPILOT_2026-09-29.md` with a strict single-case claim ceiling.
 - Added a static contract test for wiring, activation, escalation and claim ceilings.
 
-This change is a product-design improvement, not evidence that FieldPilot now outperforms general deep research. Clean-session multi-task comparison is still required.
+R2 clean-session blind testing materially improved broad-market performance: FieldPilot won all 6/6 broad-case judge votes and had a higher overall mean score than the frozen baseline. Promotion still failed because the narrow-control case split 1–1: one judge penalized FieldPilot for leaving the Notion Plus guest limit UNKNOWN even though an official Notion help route could close it.
+
+Bounded R2.1 repair:
+- explicit scope lock is now paired with `REQUESTED_FIELD_CLOSURE`;
+- every literal requested field/entity pair must be `PRESENT / BLOCKED / UNKNOWN`;
+- an UNKNOWN requested field cannot ship while a lawful allowed current official/primary route remains;
+- ambiguous pricing/product pages may be resolved through current official help/billing/plan-change/role-limit/release docs for that same field;
+- the repair may not widen the user's requested scope.
+
+The exact R2 result and failure mechanism are recorded in `references/development/BLIND_GENERAL_VS_FIELDPILOT_R2_2026-09-29.md`.
+
+This change is a product-design improvement, not evidence that FieldPilot universally outperforms general deep research.
 
 ## quality-max-01 — Quality Before Usage
 

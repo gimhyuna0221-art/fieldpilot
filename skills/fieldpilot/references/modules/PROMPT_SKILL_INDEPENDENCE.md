@@ -137,7 +137,7 @@ it may not be silently absent. If a row cannot be supported now, say so in one l
 | CHANNEL | a promotion/channel question, or reach/channel is a leading cause after diagnosis | one first route + one fallback + exact test + what to measure + geography dependency |
 | LOCAL | geography stated or established by product scope, and material | the local closure in `KOREA_LOCAL_DISTRIBUTION.md` / `secondary-and-competitors.md` |
 | DELTA | returning evidence | what changed, what stayed stable, updated decision |
-| NARROW | an explicit user scope limit | the requested fact + its material conditions + source only |
+| NARROW | an explicit user scope limit | every literal requested field/entity pair closed as supported or honestly blocked; current official/primary routes for an UNKNOWN requested field are exhausted before sending; no adjacent analysis |
 | FULL | an explicit comprehensive research or report request, in any words | Route B package |
 
 For a broad decision answered in Route A, end with a one-line offer of the full report (Route B), so
@@ -290,8 +290,7 @@ market). Then check the draft:
 3. Is any conclusion vaguer, softer or more generic because the user sounded inexperienced,
    casual or emotional? Restore it.
 4. Did an internal token or unexplained jargon reach the main text? Translate it.
-5. Is every literal question answered, with a direct answer in the first line and one action
-   direction within the first three lines? Fix it.
+5. Is every literal question answered? For an explicit narrow request, is every requested field/entity pair actually filled or honestly BLOCKED after field-specific official/primary routes were exhausted? An avoidable UNKNOWN is incomplete. For ordinary decision work, keep the direct answer in the first line and one action direction within the first three lines. Fix any miss.
 6. Does any sentence break §4.1 (adjacent-fact product claims, causal dominance, outcome/timing
    promises, unsourced material claims)? Fix it.
 7. Is anything there only to look thorough? Cut it; substance stays.
