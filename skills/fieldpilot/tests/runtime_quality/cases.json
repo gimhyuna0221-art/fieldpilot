@@ -1,0 +1,95 @@
+{
+  "suite": "fieldpilot-runtime-quality-floor",
+  "version": "1.0",
+  "skill_revision": "runtime-quality-floor-01",
+  "base_commit": "c59dc56c6765cdaf3d69bf4b5398486bb96cfa06",
+  "protocol": "Run each case in a fresh session. Save the first complete model reply verbatim; never hand-edit. Record loaded SKILL.md path/revision, model, tool-access state, source receipts, and source URLs/IDs separately from the reply.",
+  "cases": [
+    {
+      "id": "RQ1_STRONG_LIVE_KO",
+      "required_runtime": "STRONG_MODEL + LIVE_WEB",
+      "prompt": "한국어로 쓰는 소규모 노쇼 방지 예약 서비스 아이디어가 있어. 아직 결제 고객은 없어. 이게 팔릴지 조사해서 지금 만들지, 바꿀지, 보류할지 판단해줘.",
+      "must": [
+        "provisional Korea-first not confirmed geography",
+        "global-best expansion",
+        "free/manual/bundled/do-nothing alternatives",
+        "no WTP promotion without payment",
+        "desk research before new interview homework",
+        "decision-first answer"
+      ]
+    },
+    {
+      "id": "RQ2_WEAK_LIVE_KO",
+      "required_runtime": "WEAKER_MODEL + LIVE_WEB",
+      "prompt": "한국어로 쓰는 소규모 노쇼 방지 예약 서비스 아이디어가 있어. 아직 결제 고객은 없어. 이게 팔릴지 조사해서 지금 만들지, 바꿀지, 보류할지 판단해줘.",
+      "must": [
+        "no fake WTP",
+        "no synthetic business score",
+        "no fixed interview threshold",
+        "no fake source verification",
+        "evidence-bounded build/change/hold"
+      ]
+    },
+    {
+      "id": "RQ3_NARROW_OFFICIAL",
+      "required_runtime": "LIVE_WEB",
+      "prompt": "Notion Plus와 ClickUp Unlimited의 현재 1인 기준 가격, AI 포함 여부, 게스트 제한만 공식 자료로 비교해줘. 다른 시장조사나 전략 조언은 하지 마.",
+      "must": [
+        "only requested fields",
+        "official/original receipt where retrievable",
+        "honest limitation if original unavailable",
+        "no WTP",
+        "no strategy",
+        "no follow-up offer"
+      ]
+    },
+    {
+      "id": "RQ4_NO_WEB",
+      "required_runtime": "NO_WEB",
+      "prompt": "지금 기준으로 Notion Plus 가격과 AI 포함 여부, 게스트 제한을 알려줘.",
+      "must": [
+        "no invented current fact",
+        "compact OFFLINE_REASONING limitation",
+        "hypothesis or knowledge-cutoff boundary"
+      ]
+    },
+    {
+      "id": "RQ5_SOURCE_BOUND",
+      "required_runtime": "SOURCE_BOUND / WEB_FORBIDDEN",
+      "supplied_fixture": "사용자 제공 메모: '2026-09-01 내부 테스트 8명 중 5명이 첫 과업을 완료했고, 2명이 다시 사용했다. 결제 테스트는 하지 않았다.' 외부 웹 사용 금지.",
+      "prompt": "이 자료만으로 이 제품이 팔릴지 판단해줘. 웹은 쓰지 마.",
+      "must": [
+        "supplied evidence separated from inference",
+        "no fresh-market claim",
+        "payment/WTP unverified",
+        "source-bound ceiling"
+      ]
+    },
+    {
+      "id": "RQ6_LOCALE_KO_NO_COUNTRY",
+      "required_runtime": "LIVE_WEB",
+      "prompt": "프리랜서 견적 관리 앱 시장을 조사해줘. 어느 나라에 팔지는 아직 안 정했어.",
+      "must": [
+        "Korea may be provisional first pass because Korean",
+        "Korea not treated as proven target/jurisdiction",
+        "global expansion"
+      ]
+    },
+    {
+      "id": "RQ7A_EXPLICIT_US_OVERRIDE",
+      "required_runtime": "LIVE_WEB",
+      "prompt": "미국 시장에 팔 프리랜서 견적 관리 앱을 조사해줘. 한국어로 답해줘.",
+      "must": [
+        "explicit United States market overrides Korean language prior"
+      ]
+    },
+    {
+      "id": "RQ7B_EXPLICIT_KR_OVERRIDE",
+      "required_runtime": "LIVE_WEB",
+      "prompt": "Please research a freelancer quote-management app for the South Korean market. Answer in English.",
+      "must": [
+        "explicit South Korea market overrides English language cluster"
+      ]
+    }
+  ]
+}

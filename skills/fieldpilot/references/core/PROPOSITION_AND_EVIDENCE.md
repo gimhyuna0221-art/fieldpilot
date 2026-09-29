@@ -112,8 +112,10 @@ proposition:
 ```
 
 Never silently infer population, geography, timeframe, comparator, causal force, or the
-meaning of “validated.” A visible, labeled, defensible inference is allowed (geography never from
-conversation language or owner location). If a term is material and ambiguous, preserve it as
+meaning of “validated.” A visible, labeled, defensible inference is allowed. Conversation language may supply only the
+provisional search prior defined in `references/modules/MARKET_ANCHOR_AND_EXPANSION.md`; it never
+confirms proposition geography, jurisdiction, customer location, or launch market. Owner/device/account
+location is not a market anchor. If a term is material and ambiguous, preserve it as
 unknown, bound the dependent claims, and ask the nearest useful question through the
 QUESTION_GATE — normally at the end of the bounded answer.
 

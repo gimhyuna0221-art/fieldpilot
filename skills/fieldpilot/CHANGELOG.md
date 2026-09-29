@@ -1,5 +1,23 @@
 # FieldPilot Changelog
 
+## runtime-quality-floor-01 — Shared Process Floor, Honest Degradation
+
+This bounded continuation adds a host-neutral runtime quality floor without claiming model equivalence.
+
+- Added `references/modules/RUNTIME_QUALITY_FLOOR.md` and `runtime_quality_extension_revision: "runtime-quality-floor-01"`.
+- Added task-level access states `LIVE_FULL / LIVE_PARTIAL / SOURCE_BOUND / OFFLINE_REASONING`; they are inferred from actual retrieval capability, never the model/provider name.
+- Added source-receipt classes `READ_ORIGINAL / SEARCH_GROUNDED_SNIPPET / VERIFIED_REUSED_OR_USER_SUPPLIED / MEMORY_ONLY_OR_NOT_RETRIEVED` as a rendering/decision layer over the existing provenance and evidence records, not a parallel evidence database.
+- Search discovery, a plausible URL or a grounded snippet never becomes original-page verification. Current price, feature, plan-limit, release and regulation claims keep a lower ceiling when the original is retrievable but not read.
+- Added a sellability separation: `MARKET_EXISTENCE / THIS_PRODUCT_DEMAND / ACTUAL_PAYMENT_OR_WTP`. Market size, CAGR, competitor/category spend, problem severity, ROI and stated interest do not prove this product's actual WTP.
+- Added a no-synthetic-business-score guard for invented build percentages, success probabilities and market scores.
+- Strengthened AI-first/no-homework sequencing: exhaust accessible public/official/review/community/product evidence that can reduce the same uncertainty before making new interviews, surveys, recruitment or manual outreach a completion dependency. No universal interview-count threshold is added.
+- Explicit narrow factual requests suppress adjacent WTP/strategy/report-offer output and preserve requested-field closure.
+- Source-bound/offline runs degrade compactly instead of fabricating current facts or printing a wall of internal UNKNOWN states.
+- Public copy is limited to a shared process/claim-discipline floor. It does not claim equal intelligence, guaranteed same quality, always-current results, lower token/cost/time usage, or that strong models are unnecessary.
+- Aligned `PROPOSITION_AND_EVIDENCE.md` with `market-anchor-01`: conversation language can be a provisional search prior, never confirmed geography/jurisdiction.
+
+This is a runtime-contract change. Static contract coverage and behavioral validation are separate gates; neither alone proves universal quality.
+
 ## market-anchor-01 — Local-First, Global-Best, Local-Transfer
 
 User friction found: requiring the user to repeatedly state "한국 시장" is unnecessary, while allowing search engines/models to default toward abundant English/US material creates a different bias.
