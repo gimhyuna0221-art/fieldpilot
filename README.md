@@ -6,7 +6,7 @@
 
 만드는 건 AI와 같이 했는데, 팔릴지 판단하는 건 여전히 막막할 때 씁니다. FieldPilot은 Claude Code나 Codex 안에서 경쟁 서비스와 공개 자료를 조사하고, 가격과 홍보 방법, 다음에 확인할 일을 정리해 주는 스킬입니다.
 
-시장 규모, 고객, 경쟁사, 시장 트렌드, 수익성, 진입장벽 같은 기본 분석부터 **여러 시장조사 도구와 경쟁 서비스의 강점까지 흡수해 하나의 조사 흐름으로 묶었습니다.**
+시장 규모, 고객, 경쟁사, 시장 트렌드, 수익성, 진입장벽 같은 기본 분석부터 **여러 시장조사 도구와 경쟁 서비스의 강점까지 흡수해 하나의 조사 흐름으로 묶었습니다.** 넓은 시장 질문에서는 제품·대체재 판단만으로 끝내지 않고, 필요할 때 시장 구조·규모/성장·기업용 대안·보안/규제·기술 변화까지 한 단계 더 확인하는 산업 심층 백스톱을 적용합니다.
 
 [결과 예시 보기](examples/briefloop/README.md) | [설치하기](#설치하기) | [이럴 때 써보세요](#이럴-때-써보세요) | [현재 한계](#현재-한계)
 
@@ -41,6 +41,7 @@
 - 기본 버전: `1.9.9-rc04`
 - 경쟁사 방법 반영 버전: `competitor-coverage-01-r2`
 - 품질 우선 프로필: `quality-max-01`
+- 산업 심층 백스톱: `industry-depth-backstop-01`
 
 [최신 공개 저장소](https://github.com/gimhyuna0221-art/fieldpilot)에서 받은 `skills/fieldpilot` 폴더 전체가 설치되어 있어야 합니다. `SKILL.md` 하나만 복사하면 필요한 참고 자료와 계산 도구가 빠집니다.
 
@@ -53,7 +54,7 @@
 
 처음에는 이렇게 요청하세요.
 
-> FieldPilot을 사용해줘. 시작하기 전에 실제로 불러온 SKILL.md의 경로와 버전을 확인해줘. competitor_extension_revision이 competitor-coverage-01-r2이고 quality_extension_revision이 quality-max-01인지도 확인하고, 이전 버전이 불러와졌다면 먼저 알려줘.
+> FieldPilot을 사용해줘. 시작하기 전에 실제로 불러온 SKILL.md의 경로와 버전을 확인해줘. competitor_extension_revision이 competitor-coverage-01-r2, quality_extension_revision이 quality-max-01, industry_depth_extension_revision이 industry-depth-backstop-01인지도 확인하고, 이전 버전이 불러와졌다면 먼저 알려줘.
 
 AI가 “최신입니다”라고만 답하는 것보다 **실제로 읽은 파일 경로와 버전**을 보여주는지 확인하세요.
 

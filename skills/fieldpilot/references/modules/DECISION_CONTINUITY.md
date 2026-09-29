@@ -64,6 +64,16 @@ FieldPilot's users build with AI and are usually not market researchers. A short
 
 **Efficiency boundary.** Efficiency is bought by removing duplicated queries, repeated entities, re-reads of unchanged files and analysis irrelevant to this decision (§3, §4, §9). Novice phrasing is not a source of efficiency and does not lower the evidence bar for the current decision. Existing cost, publication, direct-customer-contact and approval boundaries are unchanged here, and no success probability, guaranteed outcome, fabricated customer response or false precision may be introduced.
 
+### 2.3 INDUSTRY_DEPTH_BACKSTOP — don't lose the industry layer
+
+For broad category, commercialization or viability work, do not finalize the decision after only the user-specific alternative map when an industry-level fact could change it. Apply `references/modules/INDUSTRY_DEPTH_BACKSTOP.md` and choose `NOT_NEEDED / COMPACT_BACKSTOP / DEEP_ESCALATION`.
+
+The compact pass checks only decision-relevant industry slots: market boundary/structure, supportable magnitude/growth, vendor/price ladder, enterprise/infrastructure alternatives, material security/regulation/technology shifts, local/global context and structural counterevidence. These are coverage checks, not mandatory user-facing headings.
+
+Escalate only when the compact pass exposes a contradiction or structural uncertainty capable of changing the recommendation — for example a feature that is actually bundled inside a larger market, an enterprise standard that erases apparent whitespace, a local certification barrier, a platform shift shrinking the job, or a security/trust issue that changes procurement.
+
+Market size, CAGR, vendor count and funding never raise the commercial claim ceiling by themselves. Integrate the useful backstop findings into the existing §7 decision surface; do not append a generic market-report wall unless the user requested Route B.
+
 ## 3. High-recall competitor/substitute discovery with bounded work
 
 No universal search-count or source-count cap is allowed. The unit to reduce is redundancy, not coverage.

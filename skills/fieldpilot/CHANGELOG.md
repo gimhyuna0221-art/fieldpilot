@@ -1,5 +1,27 @@
 # FieldPilot Changelog
 
+## industry-depth-backstop-01 — General Deep-Research Breadth Backstop
+
+Added after a same-topic comparison showed a useful asymmetry: the general deep-research output covered industry structure, market-size ranges, vendor tiers, enterprise alternatives and security/technology context more deeply, while FieldPilot produced stronger substitute logic, user-specific HOLD discipline and next-action compression.
+
+- Added `references/modules/INDUSTRY_DEPTH_BACKSTOP.md`.
+- Added `industry_depth_extension_revision: "industry-depth-backstop-01"` to the kernel.
+- Added three depth states: `NOT_NEEDED / COMPACT_BACKSTOP / DEEP_ESCALATION`.
+- Broad category/commercialization/viability work now conditionally checks:
+  - market boundary and industry structure;
+  - supportable market magnitude/growth when decision-relevant;
+  - vendor and price ladder;
+  - enterprise/infrastructure/open-source/bundled alternatives;
+  - material security, regulatory and technology shifts;
+  - local/global differences and industry counterevidence.
+- The compact pass escalates only when a structural contradiction can change the recommendation; narrow fact questions remain narrow.
+- Existing sizing, competitor, market-prior, local/expert, trend and regulatory modules are reused rather than duplicated.
+- Market size/CAGR/vendor count remain bounded evidence and never become product demand or WTP proof.
+- Added `references/development/GENERAL_RESEARCH_VS_FIELDPILOT_2026-09-29.md` with a strict single-case claim ceiling.
+- Added a static contract test for wiring, activation, escalation and claim ceilings.
+
+This change is a product-design improvement, not evidence that FieldPilot now outperforms general deep research. Clean-session multi-task comparison is still required.
+
 ## quality-max-01 — Quality Before Usage
 
 Based on convergent external pilot feedback, FieldPilot no longer treats usage/output reduction as a primary success target.
