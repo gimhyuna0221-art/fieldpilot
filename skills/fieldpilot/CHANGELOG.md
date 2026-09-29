@@ -26,7 +26,7 @@ Added after a same-topic comparison showed a useful asymmetry: the general deep-
 - Added `references/development/GENERAL_RESEARCH_VS_FIELDPILOT_2026-09-29.md` with a strict single-case claim ceiling.
 - Added a static contract test for wiring, activation, escalation and claim ceilings.
 
-R2 clean-session blind testing materially improved broad-market performance: FieldPilot won all 6/6 broad-case judge votes and had a higher overall mean score than the frozen baseline. Promotion still failed because the narrow-control case split 1–1: one judge penalized FieldPilot for leaving the Notion Plus guest limit UNKNOWN even though an official Notion help route could close it.
+R2 clean-session blind testing materially improved broad-market performance: FieldPilot won all 6/6 broad-case judge votes and had a higher overall mean score than the frozen baseline. The first R2 pass still failed because the narrow-control case split 1–1: one judge penalized FieldPilot for leaving the Notion Plus guest limit UNKNOWN even though an official Notion help route could close it. After the bounded R2.1 requested-field-closure repair, the affected narrow case was rerun only; FieldPilot won both blind judgments (82–77 and 97–91), so the frozen promotion gate passed.
 
 Bounded R2.1 repair:
 - explicit scope lock is now paired with `REQUESTED_FIELD_CLOSURE`;

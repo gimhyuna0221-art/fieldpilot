@@ -78,3 +78,32 @@ For explicit narrow/source-constrained requests:
 6. do not compensate for a missing field with extra analysis or advice.
 
 Only Case 4 needs behavioral rerun after this repair; broad R2 evidence remains frozen.
+
+## R2.1 narrow-control retest
+
+After adding requested-field closure, only the affected narrow case was rerun against the same frozen baseline. Broad R2 cases were not regenerated.
+
+Fresh randomized A/B mapping remained hidden until both scores were written.
+
+Results:
+- Claude safe-mode judge: FieldPilot 82 vs baseline 77.
+- GPT-5.6 Sol blind judge: FieldPilot 97 vs baseline 91.
+- Mapping decode: baseline = Candidate A, FieldPilot R2.1 = Candidate B.
+
+R2.1 fixed the specific failure:
+- Notion Plus guest limit was closed instead of avoidably left UNKNOWN.
+- ClickUp read-only versus permission-controlled guest limits were separated.
+- The response stayed inside the user's requested fields without returning to R1-style total-cost or strategy bloat.
+
+## Final promotion result
+
+The frozen promotion gate now passes:
+
+- narrow control: FieldPilot loses neither judge — PASS;
+- broad cases 1–3: FieldPilot wins 6/6 judge votes — PASS;
+- overall R2 broad+narrow evidence is above the frozen baseline on mean score — PASS;
+- no broad case has a unanimous material baseline win — PASS.
+
+This supports merging the bounded `industry-depth-backstop-02` + requested-field-closure repair into main.
+
+Claim ceiling: this is a four-case development benchmark with two blind judges, not proof of universal superiority over Claude or other general-purpose AI.
