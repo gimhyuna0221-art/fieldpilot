@@ -3,7 +3,7 @@ on:
   push:
     branches: ['quality-max-01']
   pull_request:
-    branches: ['main']
+    branches: ['main', 'feat/locale-first-market-anchor']
   workflow_dispatch:
 permissions:
   contents: read
@@ -15,6 +15,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Run runtime quality targeted contracts
+        run: |
+          python -m unittest -v \
+            skills.fieldpilot.tests.test_runtime_quality_floor_contract \
+            skills.fieldpilot.tests.test_prompt_skill_independence_contract \
+            skills.fieldpilot.tests.test_narrow_scope_completion_contract \
+            skills.fieldpilot.tests.test_market_anchor_contract \
+            skills.fieldpilot.tests.test_korea_local_coverage_contract \
+            skills.fieldpilot.tests.test_industry_depth_backstop_contract \
+            skills.fieldpilot.tests.test_quality_max_contract \
+            skills.fieldpilot.tests.test_reference_first_contract \
+            skills.fieldpilot.tests.test_lifecycle_decision_router_contract \
+            skills.fieldpilot.tests.test_research_receipts_contract
       - name: Run FieldPilot tests
         run: python -m unittest discover -s skills/fieldpilot/tests -p 'test_*.py' -v
       - name: Package skill
