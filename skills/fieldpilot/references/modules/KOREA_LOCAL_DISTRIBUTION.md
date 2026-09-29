@@ -7,7 +7,7 @@
 
 ## Governing rules
 
-1. 한국 타깃이면 `한국어 검색행동 / 국내 커뮤니티 / 직업·취미 집단 / 앱·게임 플랫폼 / 오프라인 접근`을 글로벌 채널과 함께 비교한다.
+1. 한국이 명시·검증된 타깃이면 `한국어 검색행동 / 국내 커뮤니티 / 직업·취미 집단 / 앱·게임 플랫폼 / 오프라인 접근`을 글로벌 채널과 함께 비교한다. 한국어만 있고 더 강한 지역 단서가 없으면 `MARKET_ANCHOR_AND_EXPANSION.md`에 따라 한국을 잠정 1차 탐색시장으로 삼아 같은 로컬 후보를 먼저 찾되, 이를 확정 관할권이나 확정 타깃 시장으로 서술하지 않는다.
 2. 특정 커뮤니티 이름은 현재 타깃이 실제로 존재하고, 링크·셀프홍보·조사 모집이 규칙상 가능한지 확인하기 전에는 실행 채널로 확정하지 않는다.
 3. 개발자/AI 커뮤니티 반응은 타깃 고객 반응이 아니다. 타깃이 개발자일 때만 시장증거로 직접 승격할 수 있다.
 4. 한국 커뮤니티는 익명성, 팬덤, 직업집단, 지역성 등 선택구조가 강할 수 있으므로 broader-market generalization을 자동으로 하지 않는다.
@@ -70,21 +70,27 @@ A response should prefer a Korean route only because the evidence and user const
 
 This section closes a failure mode observed in an internal blind benchmark: a globally disciplined report can still miss decision-relevant Korean competitors, regulation, or access channels when the target geography is Korea.
 
-### Activation and non-assumption rule
+### Activation and provisional-market rule
 
-Activate this local coverage only when Korea is established by the user, product/store/contract scope, verified target-market evidence, or another explicit project fact.
+Use two levels:
 
-Do **not** infer Korea merely from:
-- Korean-language conversation;
-- the owner's current physical/device/account location;
-- KRW appearing in an unrelated context;
-- the model's prior knowledge of the owner.
+**FULL_KOREA_CLOSURE** — activate when Korea is established by the user, product/store/contract scope, verified target-market evidence, or another explicit project fact. All applicable Korean competitor/channel/pricing/regulatory slots may then contribute directly to the Korea-market decision.
 
-If geography is unknown and can change the recommendation, return `GEOGRAPHY_UNRESOLVED`, give the bounded global conclusion with the named local dependency and the conclusions it limits, and end that answer with one decision-changing geography question (QUESTION_GATE `ASK_AFTER` in `PROMPT_SKILL_INDEPENDENCE.md`). Geography alone never blocks the first answer, and Korean-language conversation still never establishes Korea. When the user later confirms Korea, run this local coverage as a returning-evidence delta.
+**PROVISIONAL_KOREA_FIRST_PASS** — activate when the conversation is primarily Korean, no stronger contradictory market evidence exists, and `MARKET_ANCHOR_AND_EXPANSION.md` assigns South Korea as the provisional language market. Search Korean competitors, bundled/free/manual alternatives, local prices, platforms, customer language and public evidence first, then expand globally. This is a search-order prior, not proof that Korea is the launch market.
+
+Do **not** treat Korean language alone as proof of:
+- Korean legal jurisdiction;
+- Korean customer location;
+- Korean launch/distribution scope;
+- Korean tax, certification or regulatory applicability.
+
+Never use the owner's current physical/device/account location, IP-derived location or remembered owner profile as the market anchor. KRW counts only when it is materially tied to the active product, offer, customer or transaction; unrelated KRW does not establish the market.
+
+If the provisional Korea-first pass plus global expansion still leaves a geography ambiguity that can materially reverse the recommendation, ask one market question at the end through QUESTION_GATE (`ASK_AFTER`). Do not ask it before doing the useful provisional research. When the user later confirms or changes the market, update only geography-dependent parts.
 
 ### LOCAL_COMPETITOR_COVERAGE
 
-For a Korea-targeted commercialization or broad viability decision, the Alternative Map is incomplete until the search has proportionately checked the decision-relevant local classes below:
+For a confirmed Korea-targeted commercialization or broad viability decision, the Alternative Map is incomplete until the search has proportionately checked the decision-relevant local classes below. Under `PROVISIONAL_KOREA_FIRST_PASS`, use the same classes for discovery, but label Korea-dependent conclusions provisional until the market is established:
 
 ```text
 KOREA_LOCAL_DIRECT

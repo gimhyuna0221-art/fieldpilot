@@ -1,10 +1,10 @@
 # Local and expert research bridge
 
-Use for a verified local market, specialist industry report, local panel or an irreducible offline/expert evidence gap. Never infer geography solely from Korean wording. Existing `KOREA_LOCAL_DISTRIBUTION.md`, `PRIMARY_RESEARCH_PLATFORM_BRIDGE.md`, sampling and ethics rules remain governing.
+Use for a verified local market, a provisional language-market first pass, specialist industry report, local panel or an irreducible offline/expert evidence gap. Resolve search order through `MARKET_ANCHOR_AND_EXPANSION.md`: language may supply a provisional local/language prior, never confirmed jurisdiction. Existing `KOREA_LOCAL_DISTRIBUTION.md`, `PRIMARY_RESEARCH_PLATFORM_BRIDGE.md`, sampling and ethics rules remain governing.
 
 ## Local evidence before imported proxies
 
-For Korea, search relevant official statistics and disclosures first when they answer the question: KOSIS, the responsible ministry or regulator, DART, public trade bodies and accessible industry reports. These are source candidates, not mandatory reads. Preserve population, industry code/category, geography, period, unit and definition. A global statistic or another jurisdiction's panel is a proxy with limits, not a local market estimate.
+For a confirmed Korea market, search relevant official statistics and disclosures first when they answer the question: KOSIS, the responsible ministry or regulator, DART, public trade bodies and accessible industry reports. Under a provisional Korean-language anchor, these are first-pass discovery candidates but Korea-specific jurisdiction conclusions remain conditional until the market is established. Preserve population, industry code/category, geography, period, unit and definition. A global statistic or another jurisdiction's panel is a proxy with limits, not a local market estimate.
 
 Compare conflicting reports in a definition table before averaging: included products, revenue versus transactions, nominal/real currency, base year, observed/estimated/forecast, publication date and methodology. Reportlinker, Statista or specialist repositories can locate reports; a catalog listing or inaccessible paid report does not supply its underlying findings. Citation permission is not reproduction or commercial redistribution permission.
 

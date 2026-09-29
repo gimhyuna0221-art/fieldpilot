@@ -1,5 +1,23 @@
 # FieldPilot Changelog
 
+## market-anchor-01 — Local-First, Global-Best, Local-Transfer
+
+User friction found: requiring the user to repeatedly state "한국 시장" is unnecessary, while allowing search engines/models to default toward abundant English/US material creates a different bias.
+
+- Added `references/modules/MARKET_ANCHOR_AND_EXPANSION.md`.
+- Added `market_anchor_extension_revision: "market-anchor-01"` to the kernel.
+- Added market-anchor precedence: explicit market → verified case market → strong local signal → provisional language market → language cluster → global unresolved.
+- Language is now a **search prior, not geography proof**.
+- Korean can trigger a provisional South Korea first-pass search when no stronger contradictory signal exists.
+- English never defaults to the United States; English, Spanish, Portuguese, French and Arabic use language-market clusters unless stronger market evidence exists.
+- Added `LOCAL-FIRST → GLOBAL-BEST → LOCAL-TRANSFER`: inspect likely local alternatives first, then global best references, then test price/platform/regulatory/workflow transferability.
+- Added a provisional Korea mode distinct from full confirmed Korea closure.
+- Device/account/physical/IP/remembered-owner location are forbidden market anchors.
+- Geography questions move later: research first, ask only if the remaining ambiguity can still materially reverse the recommendation.
+- Added contract tests for market-anchor precedence, language priors, US-default prevention, local-transfer gates and Korea provisional/full modes.
+
+This change reduces user input burden and US/English-source defaulting without claiming that conversation language identifies the user's actual target market.
+
 ## industry-depth-backstop-02 — Blind-Test Repair of Industry Breadth
 
 Added after a same-topic comparison showed a useful asymmetry: the general deep-research output covered industry structure, market-size ranges, vendor tiers, enterprise alternatives and security/technology context more deeply, while FieldPilot produced stronger substitute logic, user-specific HOLD discipline and next-action compression.
