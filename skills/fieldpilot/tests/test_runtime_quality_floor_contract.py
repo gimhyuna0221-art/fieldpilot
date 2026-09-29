@@ -72,8 +72,9 @@ class RuntimeQualityFloorContract(unittest.TestCase):
             self.assertIn(marker, self.mod)
 
     def test_locale_prior_is_not_confirmed_geography(self):
-        self.assertIn('conversation language may supply only the provisional search prior', self.prop.lower())
-        self.assertIn('never\nconfirms proposition geography, jurisdiction, customer location, or launch market', self.prop)
+        prop_flat = ' '.join(self.prop.lower().split())
+        self.assertIn('conversation language may supply only the provisional search prior', prop_flat)
+        self.assertIn('never confirms proposition geography, jurisdiction, customer location, or launch market', prop_flat)
         self.assertIn('Explicit market overrides language', self.mod)
         self.assertIn('Language remains a search prior, never jurisdiction proof', self.mod)
 
