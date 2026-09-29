@@ -1,19 +1,25 @@
 # FieldPilot Changelog
 
-## industry-depth-backstop-01 — General Deep-Research Breadth Backstop
+## industry-depth-backstop-02 — Blind-Test Repair of Industry Breadth
 
 Added after a same-topic comparison showed a useful asymmetry: the general deep-research output covered industry structure, market-size ranges, vendor tiers, enterprise alternatives and security/technology context more deeply, while FieldPilot produced stronger substitute logic, user-specific HOLD discipline and next-action compression.
 
 - Added `references/modules/INDUSTRY_DEPTH_BACKSTOP.md`.
-- Added `industry_depth_extension_revision: "industry-depth-backstop-01"` to the kernel.
+- Added `industry_depth_extension_revision: "industry-depth-backstop-02"` to the kernel.
 - Added three depth states: `NOT_NEEDED / COMPACT_BACKSTOP / DEEP_ESCALATION`.
-- Broad category/commercialization/viability work now conditionally checks:
+- R1 clean-session blind testing failed promotion: baseline won both judges in cases 2–4 and split case 1. The failure record is `references/development/BLIND_GENERAL_VS_FIELDPILOT_R1_2026-09-29.md`.
+- Broad category/commercialization/viability work now uses `COMPACT_BACKSTOP` as a minimum internal floor and checks:
   - market boundary and industry structure;
   - supportable market magnitude/growth when decision-relevant;
   - vendor and price ladder;
   - enterprise/infrastructure/open-source/bundled alternatives;
   - material security, regulatory and technology shifts;
-  - local/global differences and industry counterevidence.
+  - local/global differences and industry counterevidence;
+  - `CURRENT_CAPABILITY_DELTA` for the strongest alternatives defining the claimed gap/threat.
+- Added `BACKSTOP_COMPLETION_GATE`: accessible decision-flipping UNKNOWN slots block finalization until searched or honestly closed.
+- Added kernel `EXPLICIT_SCOPE_LOCK`: explicit narrow requests forbid adjacent analysis, total-cost modeling, strategy, end questions and fuller-report offers.
+- Added `Cost is not value`: low marginal input/delivery cost cannot be used as low-WTP evidence.
+- Strengthened `FIRST_PAID_PROOF`: next action targets the highest residual business uncertainty; technical prototype tests do not substitute for payment evidence when sellability is the active decision.
 - The compact pass escalates only when a structural contradiction can change the recommendation; narrow fact questions remain narrow.
 - Existing sizing, competitor, market-prior, local/expert, trend and regulatory modules are reused rather than duplicated.
 - Market size/CAGR/vendor count remain bounded evidence and never become product demand or WTP proof.

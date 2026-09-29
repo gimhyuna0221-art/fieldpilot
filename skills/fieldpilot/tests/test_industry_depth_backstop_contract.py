@@ -17,7 +17,7 @@ class IndustryDepthBackstopContract(unittest.TestCase):
 
     def test_revision_and_wiring(self):
         self.assertIn(
-            'industry_depth_extension_revision: "industry-depth-backstop-01"',
+            'industry_depth_extension_revision: "industry-depth-backstop-02"',
             self.skill,
         )
         self.assertIn("INDUSTRY_DEPTH_BACKSTOP.md", self.skill)
@@ -81,6 +81,35 @@ class IndustryDepthBackstopContract(unittest.TestCase):
         self.assertIn("strong general deep-research report", self.mod)
         self.assertIn("Did the extra industry research actually change", self.mod)
         self.assertIn("do not dump the extra material", self.mod)
+
+    def test_completion_gate_and_current_capability_delta(self):
+        for marker in [
+            "BACKSTOP_COMPLETION_GATE",
+            "CURRENT_CAPABILITY_DELTA",
+            "strongest 3–5",
+            "current official",
+            "continue research instead of finalizing",
+        ]:
+            self.assertIn(marker, self.mod)
+
+    def test_explicit_scope_lock_and_cost_value_guard(self):
+        for marker in [
+            "Explicit scope lock",
+            "total-cost modeling",
+            "offer of a fuller report",
+            "Cost is not value",
+        ]:
+            self.assertIn(marker, self.skill)
+        self.assertIn("Explicit scope restrictions are hard boundaries", self.cont)
+
+    def test_next_action_targets_business_uncertainty(self):
+        for marker in [
+            "highest residual business uncertainty",
+            "technical prototype test alone is insufficient",
+            "no sale",
+            "nobody saw the offer",
+        ]:
+            self.assertIn(marker, self.cont)
 
     def test_single_case_evidence_boundary(self):
         self.assertIn("controlled model benchmark", self.dev)

@@ -1,4 +1,4 @@
-# Industry Depth Backstop — industry-depth-backstop-01
+# Industry Depth Backstop — industry-depth-backstop-02
 
 This module prevents FieldPilot's decision-first path from becoming narrower than a strong general deep-research answer when industry context can materially change the decision.
 
@@ -76,18 +76,37 @@ Assess each applicable slot as `PRESENT / NOT_APPLICABLE / NOT_DEFENSIBLE / UNKN
 4. **ENTERPRISE_OR_INFRASTRUCTURE_ALTERNATIVES**
    - Check standards, bundled capabilities, operating-system/platform features, hardware management, internal IT tools, open-source/self-hosted options, and "already included" capabilities.
    - These often erase apparent startup whitespace.
-5. **SECURITY_REGULATORY_TECH_SHIFT**
+
+5. **CURRENT_CAPABILITY_DELTA**
+   - For the strongest 3–5 direct, substitute or adjacent alternatives that define the claimed gap, inspect current official product/release/pricing material.
+   - Search for recent capability launches, renamed products, plan migrations, bundled features and newly supported formats/workflows.
+   - An old comparison page is not sufficient when a recent release could erase or create the gap.
+
+6. **SECURITY_REGULATORY_TECH_SHIFT**
    - Check only material security failures, regulation/compliance, platform policy, standards, or technology shifts.
    - Ask whether the shift creates demand, destroys demand, changes trust, or moves the job into another layer.
 
-6. **LOCAL_GLOBAL_CONTEXT**
+7. **LOCAL_GLOBAL_CONTEXT**
    - When geography is known and material, compare local incumbents, distribution, certification/regulation, price/access and global alternatives.
    - Global evidence never silently substitutes for a materially different local market.
 
-7. **INDUSTRY_COUNTEREVIDENCE**
+8. **INDUSTRY_COUNTEREVIDENCE**
    - Preserve mature substitutes, bundled/free solutions, declining economics, security liabilities, platform displacement, buyer inertia, and other facts that weaken the opportunity.
 
 These slots are a coverage backstop, not mandatory report headings. User-facing output stays decision-first unless the user requested the full report.
+
+### 4.1 BACKSTOP_COMPLETION_GATE
+
+Before a broad Route A decision can ship:
+
+1. every applicable compact slot must have an internal state `PRESENT / NOT_APPLICABLE / NOT_DEFENSIBLE / UNKNOWN`;
+2. if a slot is `UNKNOWN`, ask whether it could reverse or materially bound the recommendation;
+3. when the answer is yes and a lawful accessible source route remains, continue research instead of finalizing;
+4. for CURRENT_CAPABILITY_DELTA, at least the strongest alternatives that define the proposed whitespace or threat must be checked against current official material;
+5. searched-not-found is never a substitute for this gate.
+
+The gate does not force a long user-facing section. It forces research completion, then compresses only after the decision-critical industry layer is closed.
+
 ## 5. Deep-escalation triggers
 
 Move from `COMPACT_BACKSTOP` to `DEEP_ESCALATION` when one or more of these remains decision-material:
@@ -142,6 +161,7 @@ Never convert:
 
 - parent-market size → this product's market size;
 - category CAGR → demand for this product;
+- low delivery/input cost → low willingness to pay;
 - vendor count → market attractiveness;
 - competitor absence → confirmed whitespace;
 - review/interest → purchase or WTP;

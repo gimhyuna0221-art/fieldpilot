@@ -2,7 +2,7 @@
 
 README는 처음 쓰는 사람이 빠르게 이해하도록 핵심만 남깁니다. 이 문서는 현재 공개본에서 사용할 수 있는 주요 분석 경로를 기능별로 설명합니다.
 
-> 기준: `1.9.9-rc04` + `competitor-coverage-01-r2` + `quality-max-01` + `industry-depth-backstop-01`
+> 기준: `1.9.9-rc04` + `competitor-coverage-01-r2` + `quality-max-01` + `industry-depth-backstop-02`
 
 ## 1. 경쟁사·대체재·레퍼런스 탐색
 

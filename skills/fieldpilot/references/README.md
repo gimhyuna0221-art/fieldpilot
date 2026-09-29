@@ -18,7 +18,7 @@
 - `modules/PROMPT_SKILL_INDEPENDENCE.md` — 모든 경로(A–E)에서 가장 먼저 적용한다. 사용자의 말(짧은 말·오타·반말·감정·여러 질문)을 사례(CASE_FRAME)로 복원하고, 조사 바닥선을 말투가 아니라 사례 상태로 정하며, 질문은 QUESTION_GATE 하나로만 결정한다(찾을 수 있으면 찾고, 추론할 수 있으면 가정으로 밝히고, 먼저 답한 뒤 끝에 최대 2개 질문). 전달은 쉬운 말이 기본이며, 보내기 전 전문가 쌍둥이 점검을 한다.
 - 흩어져 있던 질문 규칙(지리·단계·범위·제품 사실·수익 모델 등)은 이 게이트를 따르도록 정렬했다.
 
-## Industry depth backstop — industry-depth-backstop-01
+## Industry depth backstop — industry-depth-backstop-02
 
 - `modules/INDUSTRY_DEPTH_BACKSTOP.md` — 넓은 시장·사업성·진입 판단에서 제품/대체재 중심 결론이 일반 심층리서치보다 산업 맥락을 놓치지 않게 하는 조건부 백스톱이다.
 - `NOT_NEEDED / COMPACT_BACKSTOP / DEEP_ESCALATION`으로 깊이를 정하고, 시장 경계·구조, 필요한 경우의 규모/성장, 벤더/가격대, 기업용·인프라 대안, 보안·규제·기술 변화, 국내외 차이와 구조적 반대근거를 확인한다.
