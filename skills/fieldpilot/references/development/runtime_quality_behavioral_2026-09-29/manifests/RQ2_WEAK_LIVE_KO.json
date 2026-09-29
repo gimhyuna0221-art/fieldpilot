@@ -1,0 +1,210 @@
+{
+  "case_id": "RQ2_WEAK_LIVE_KO",
+  "candidate_commit": "f3dc869b032091d611dfa016007d2612bdd2fb03",
+  "loaded_skill_path": null,
+  "runtime_quality_extension_revision": null,
+  "market_anchor_extension_revision": null,
+  "requested_model": "haiku",
+  "resolved_models_observed": [
+    "claude-haiku-4-5-20251001"
+  ],
+  "claude_cli_version": "2.1.284",
+  "allowed_tools": [
+    "Read",
+    "Glob",
+    "Grep",
+    "WebSearch",
+    "WebFetch"
+  ],
+  "tool_calls": [
+    {
+      "name": "Read",
+      "input": {
+        "file_path": "C:\\Users\\rlagu\\AppData\\Local\\Temp\\fieldpilot-runtime-behavior01\\project\\.claude\\skills\\fieldpilot\\SKILL.md"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "Korea no-show prevention reservation system market 2024 2025"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "한국 노쇼 방지 예약 시스템 시장 경쟁사"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "한국 미용실 레스토랑 노쇼율 예약 시스템"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "Korea beauty salon restaurant clinic no-show problem statistics"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "Naver 예약 Kakao 예약 CatchTable Korea reservation pricing model"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "한국 예약 시스템 비용 월액 가격 Toss Place 네이버 예약"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "Korea restaurant beauty salon reservation SaaS market size willingness to pay"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "\"테이블매니저\" OR \"노쇼핑\" OR \"위커밋\" Korea no-show reservation pricing"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "한국 식당 미용실 예약 시스템 도입 비용 의존도 네이버 Kakao"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "Korea small business SaaS adoption payment friction free vs paid reservation"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "Korea Naver Maps Kakao Map restaurant integration built-in reservation 2025"
+      }
+    },
+    {
+      "name": "WebSearch",
+      "input": {
+        "query": "한국 자영업자 네이버 예약 의존 빠져나가기 어려움"
+      }
+    }
+  ],
+  "retrieved_source_urls_or_ids_observed": [
+    "http://www.ko-ba.org/news/articleView.html?idxno=1999",
+    "https://apps.apple.com/KR/app/id1521817390",
+    "https://apps.apple.com/app/id1436812397",
+    "https://apps.apple.com/app/id1521817390",
+    "https://apps.apple.com/kr/app/%ED%86%A0%EC%8A%A4-%EC%82%AC%EC%9E%A5%EB%8B%98-%ED%8F%AC%EC%8A%A4/id6447936572",
+    "https://apps.apple.com/us/app/id1324900371",
+    "https://apps.shopify.com/novalnet-hpp-kakaopay",
+    "https://aviaanaccounting.com/market-research-feasibility-study-and-business-plan-for-salon-in-south-korea/",
+    "https://beyond-seoul.vercel.app/journal/how-to-book-restaurants-korea-foreigner",
+    "https://biz.heraldcorp.com/article/10485856",
+    "https://brunch.co.kr/@@dMt/12",
+    "https://brunch.co.kr/@tyangkyu/78",
+    "https://checkless.io/blog/restaurant-reservations-no-shows-2026-solutions",
+    "https://dataintelo.com/report/beauty-appointment-service-market",
+    "https://easyweek.io/business/blog/how-to-reduce-no-shows-in-beauty/",
+    "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01341526619107240",
+    "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01416966625703320",
+    "https://en.wikipedia.org/wiki/K-beauty",
+    "https://en.wikipedia.org/wiki/KakaoBank",
+    "https://en.wikipedia.org/wiki/KakaoMusic",
+    "https://en.wikipedia.org/wiki/Kakao_Entertainment",
+    "https://en.wikipedia.org/wiki/Kakao_M",
+    "https://en.wikipedia.org/wiki/Keumyoung_Group",
+    "https://en.wikipedia.org/wiki/Map_platforms_in_South_Korea",
+    "https://en.wikipedia.org/wiki/The_Time_Hotel",
+    "https://en.wikipedia.org/wiki/Yes_or_No_(game_show",
+    "https://get.mytime.com/resource-center/blog/how-to-reduce-no-shows-and-last-minute-cancellations-in-salons-and-spas/",
+    "https://gongbiz.kr/",
+    "https://hyuni.substack.com/p/hwbi-32_-",
+    "https://ishopcare.co.kr/story/tosspos-naver-place-reservation-guide",
+    "https://jeongjailronews.substack.com/p/317-it-7",
+    "https://jeongjailronews.substack.com/p/f37",
+    "https://k-life.co/life/4047",
+    "https://knowaboutkorea.com/essentials/guide/korea-essential-apps-guide",
+    "https://koncierge.kr/en/community/blog/catchtable-reservation-foreigner",
+    "https://koreaexperience.com/blog/catchtable-global-reservations-2026",
+    "https://korealocally.com/naver-map-guide-for-tourists/",
+    "https://linkoreamarketing.com/korean-saas-market-guide/",
+    "https://markwideresearch.com/south-korea-hair-care-market",
+    "https://mbiz.heraldcorp.com/article/2692378",
+    "https://mile-blog.inblog.io/insight18",
+    "https://namu.wiki/w/%EB%84%A4%EC%9D%B4%EB%B2%84%20%EC%98%88%EC%95%BD",
+    "https://news.nate.com/view/20251218n11126",
+    "https://noshowhair.com/",
+    "https://play.google.com/store/apps/details?id=com.mealant.tabling&hl=en_US",
+    "https://qnextech.com/ko/blog/best-meeting-room-booking-system-for-hybrid-work-environments/",
+    "https://safedoc.io/blog/no-show-rate-lowering-hospital-strategies",
+    "https://seoulalien.substack.com/p/61",
+    "https://seoulshopper.com/blogs/tips/google-map-naver-map-kakao-map",
+    "https://seoulstart.com/guides/catchtable-reservations-guide",
+    "https://seoulstart.com/guides/finding-good-restaurants-korea-guide",
+    "https://simplybook.me/en/reduce-salon-clinic-no-shows",
+    "https://simplybook.me/ko/",
+    "https://simplybook.me/ko/scheduling-system-for-hair-and-beauty-services",
+    "https://softwarepricing.com/blog/saas-pricing-models/",
+    "https://stripe.com/at/resources/more/payments-in-south-korea",
+    "https://support.anthropic.com/ko/articles/9267305-팀-플랜의-가격은-어떻게-되나요",
+    "https://support.toss.im/faq/tossplace/4457?from=147&page=1",
+    "https://tomtunguz.com/pricing-in-sems",
+    "https://tossplace.com/product/booking",
+    "https://tossplace.com/story/beauty_no_show",
+    "https://tossplace.com/story/reservation_renewal",
+    "https://v.daum.net/v/20210914195603951",
+    "https://waitq.app/blog/salon-statistics",
+    "https://whattime.co.kr/",
+    "https://wifitalents.com/korean-salon-industry-statistics/",
+    "https://www.aljazeera.com/news/2024/12/23/as-south-korea-draws-visitors-chasing-beauty-dodgy-practices-pose-risks",
+    "https://www.artisangrowthstrategies.com/blog/feature-gating-economics-how-saas-companies-decide-what-goes-free-vs-paid",
+    "https://www.asiae.co.kr/article/2018073014001195858",
+    "https://www.barchart.com/story/news/30513145/payletter-payment-gateway-features-benefits-business-solutions",
+    "https://www.bookrhub.com/en/no-show-report-2026",
+    "https://www.businessresearchinsights.com/market-reports/online-reservation-system-market-121470",
+    "https://www.cognitivemarketresearch.com/airline-reservation-system-market-report",
+    "https://www.cognitivemarketresearch.com/parking-reservation-system-market-report",
+    "https://www.da-val.com/cases/hairshop-reservation",
+    "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11213439",
+    "https://www.digitalnomadskorea.com/post/korea-7-must-have-apps-for-digital-nomads",
+    "https://www.etisia.com/no-show-statistics",
+    "https://www.futuremarketinsights.com/reports/visitor-management-system-industry-analysis-in-korea",
+    "https://www.grandviewresearch.com/industry-analysis/beauty-salon-market-report",
+    "https://www.grandviewresearch.com/industry-analysis/spa-salon-software-market-report",
+    "https://www.handled.co.kr/korea-story/korea-restaurant-reservation-guide",
+    "https://www.hubifi.com/blog/saas-vs-subscription-model",
+    "https://www.i-boss.co.kr/ab-6141-72330",
+    "https://www.koreabycar.com/journal/naver-map-vs-kakao-map",
+    "https://www.koreatimes.co.kr/business/tech-science/20260310/naver-kakao-bet-on-agentic-ai-to-defend-map-stronghold",
+    "https://www.marketgrowthreports.com/market-reports/salon-booking-software-market-106479",
+    "https://www.marketresearchfuture.com/reports/salon-services-market-12294",
+    "https://www.mordorintelligence.com/industry-reports/spa-and-salon-software-market",
+    "https://www.omago.ai/ko/blog/naver-booking-fees-truth-korea",
+    "https://www.opc.gouv.qc.ca/en/consumer/topic/restaurant-reservation",
+    "https://www.statista.com/topics/13744/beauty-services-and-treatments-in-south-korea/",
+    "https://www.tablemanager.io/",
+    "https://www.tandfonline.com/doi/full/10.1111/jsbm.12304",
+    "https://www.threads.com/@brand_specialist/post/DXZQWwIknoJ/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%98%88%EC%95%BD-%EC%99%9C-%EA%B1%B8%EC%96%B4%EC%95%BC-%ED%95%98%EB%83%90%EA%B3%A0-%EB%AC%BC%EC%96%B4%EB%B3%B4%EC%8B%9C%EB%8A%94%EB%8D%B0%EC%9A%94%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%9D%B4%EC%9C%A0%EB%8A%94-%EC%A7%84%EC%A7%9C-%EC%98%AC-%EC%86%90%EB%8B%98%EB%A7%8C-%EA%B1%B8%EB%9F%AC%EC%A7%84%EB%8B%A4%EB%8A%94-%EA%B1%B0%EC%98%88%EC%9A%94%EC%A0%84%ED%99%94%EB%A1%9C-%EC%98%88%EC%95%BD%EB%B0%9B%EC%9C%BC%EB%A9%B4-%EC%A6%89%ED%9D%A5%EC%A0%81%EC%9D%B8-%EC%86%90%EB%8B%98%EC%9D%B4-%EB%A7%8E%EC%95%84%EC%9A%94%EA%B7%B8%EB%9E%98%EC%84%9C-%EB%85%B8%EC%87%BC%EB%8F%84",
+    "https://www.traveltimes.co.kr/news/articleView.html?idxno=64875",
+    "https://www.verifiedmarketreports.com/product/meeting-room-reservation-system-market/",
+    "https://www.verifiedmarketreports.com/product/online-reservation-system-market/",
+    "https://www.verifiedmarketreports.com/product/seat-reservation-system-market/",
+    "https://www.verifiedmarketresearch.com/product/spa-and-salon-software-market/"
+  ],
+  "start_time": "2026-09-30T00:09:34.658417+09:00",
+  "end_time": "2026-09-30T00:11:05.169381+09:00",
+  "raw_reply_sha256": "b52d75c3a0914ef56973471a1923423148c39a82c9e7c0e162ef011b980774f8",
+  "return_code": 0,
+  "execution_error": null,
+  "contaminated": true,
+  "path_ok": false,
+  "runtime_revision_ok": false,
+  "market_revision_ok": false
+}
