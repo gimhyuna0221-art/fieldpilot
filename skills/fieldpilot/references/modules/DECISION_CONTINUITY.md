@@ -98,10 +98,11 @@ For each weak facet:
 1. create semantically distinct query expansions rather than paraphrase spam;
 2. search/retrieve actual sources;
 3. canonicalize aliases, vendor/product names, duplicate URLs, and repeated listings before deep reading;
-4. classify verified candidates as direct competitor / substitute / adjacent solution;
-5. mark the facet `OK / LIMITED / BLOCKED / NOT_CHECKED / NOT_APPLICABLE`;
-6. stop revisiting a satisfied facet when new searches return only already-known entities/evidence;
-7. continue when a new relevant entity, contradiction, or decision-relevant facet appears.
+4. apply the decision-value triage in `SOURCE_DISCOVERY_AND_SELECTION.md`: quick-screen the broad candidate set, but deep-read any candidate that can change a material question, add a new alternative/entity/evidence class, surface counterevidence, or establish a mutable primary fact;
+5. classify verified candidates as direct competitor / substitute / adjacent solution;
+6. mark the facet `OK / LIMITED / BLOCKED / NOT_CHECKED / NOT_APPLICABLE`;
+7. stop revisiting a satisfied facet when new searches return only already-known entities/evidence;
+8. continue when a new relevant entity, contradiction, or decision-relevant facet appears.
 
 Any generated or hypothetical expansion text is discovery material, not evidence. It may suggest vocabulary, but a real source must be retrieved and checked before a claim is admitted.
 
@@ -276,7 +277,7 @@ When §2.1 applies to an already-built product, explicitly cover the nine fields
 |---|---|
 | CURRENT_DECISION | Who the decision concerns and the strongest defensible current judgment. |
 | PAIN_SIGNAL_SYNTHESIS | Recurring job/problem, source classes and locators, sampled scope, contradictory experiences and limits. |
-| COMPETITIVE_ALTERNATIVES | Direct competitors plus relevant substitutes/manual work/doing nothing; distinguish observed use from hypothetical alternatives. |
+| COMPETITIVE_ALTERNATIVES | Direct competitors plus relevant substitutes/manual work/doing nothing and, where plausible, DIY_WITH_AI custom-build substitution; distinguish observed use from hypothetical alternatives. |
 | MONEY_SHAPE | Target payer (label hypotheses), verified alternative cost/pricing clue with billing/date conditions or UNKNOWN, switching friction, current commercial/WTP rung. |
 | PRODUCT_STATE_DELTA | Evidence-backed capability versus the market need; implementation and shipping separately; CONFIRMED_GAP versus UNKNOWN_GAP. A missing product inspection remains PRODUCT_STATE_UNAVAILABLE. |
 | WHY_SWITCH_OR_NOT | Supported reason to change from the present alternative and the strongest reason to stay. If unestablished, state UNKNOWN; a feature difference alone is not demonstrated buyer preference. |

@@ -45,6 +45,7 @@
 - 시장 앵커: `market-anchor-01`
 - 런타임 품질 바닥선: `runtime-quality-floor-01`
 - 시장 방향 합성: `decision-direction-01`
+- 증거 선별·AI 직접제작 대체재·시장 이탈 신호: `evidence-opportunity-01`
 - 시장 앵커·지역 확장: `market-anchor-01`
 
 [최신 공개 저장소](https://github.com/gimhyuna0221-art/fieldpilot)에서 받은 `skills/fieldpilot` 폴더 전체가 설치되어 있어야 합니다. `SKILL.md` 하나만 복사하면 필요한 참고 자료와 계산 도구가 빠집니다.

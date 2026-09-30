@@ -17,6 +17,7 @@ metadata:
   market_anchor_extension_revision: "market-anchor-01"
   runtime_quality_extension_revision: "runtime-quality-floor-01"
   direction_extension_revision: "decision-direction-01"
+  evidence_opportunity_extension_revision: "evidence-opportunity-01"
 ---
 
 # FieldPilot
@@ -121,6 +122,29 @@ There is no required option count and no synthetic winner score. If evidence can
 directions, return `DIRECTION_UNRESOLVED` and the smallest evidence needed to discriminate them rather
 than forcing a recommendation. A recommended direction is evidence-bounded advice, not a guarantee of
 success.
+
+## EVIDENCE-OPPORTUNITY-01 — WIDE DISCOVERY, SELECTIVE READING, REAL SUBSTITUTE PRESSURE
+
+For evidence-dependent market/product decisions, preserve broad discovery while spending deep-reading effort
+only where it can change the decision. Apply the decision-value triage in
+`references/modules/SOURCE_DISCOVERY_AND_SELECTION.md` and the adaptive search loop in
+`references/modules/DECISION_CONTINUITY.md`: canonicalize and quick-screen broad candidates first, but
+deep-read any candidate that can add a new alternative/entity/evidence class, material counterevidence,
+a mutable primary fact, or a decision-changing contradiction. A snippet/summary used for triage is not
+silently promoted to inspected evidence.
+
+When alternative pressure is material, `references/methods/secondary-and-competitors.md` must consider
+`DIY_WITH_AI` separately from generic chat-AI/manual work when customers could plausibly use coding/building
+agents to create a fit-for-purpose tool. Compare total specification/build/debug/maintenance/integration/support
+burden, not theoretical code generation alone.
+
+When a current incumbent change can force users to seek alternatives, apply
+`MARKET_DISPLACEMENT_TRIGGER` in `references/modules/LIVE_TREND_AND_FRESHNESS_RADAR.md`: retirement,
+feature removal, price/plan changes, API restrictions, policy/regulatory changes and similar events may inform
+WHY NOW and market direction, but never prove demand, switching, WTP or whitespace by themselves.
+
+This extension adds no persistent crawler/database, fixed source quota, automatic monitoring, or success score.
+It is bounded by the existing quality, provenance, competitor-recall, coverage and commercial-claim ceilings.
 
 ## REFERENCE-FIRST-01 — REQUIRED BEFORE RESEARCH CONCLUSIONS
 

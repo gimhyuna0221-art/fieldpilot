@@ -68,6 +68,47 @@ Host-level URL approval dialogs are not themselves evidence that a source is pri
 security controls. FieldPilot must not attempt to bypass them; it should reduce unnecessary prompts by fetching
 only the smallest sufficient evidence set.
 
+### 1.2 Decision-value triage before deep reading
+
+High-recall discovery and deep reading are different jobs. Preserve a wide candidate net, but do not spend the
+same reading effort on every result.
+
+For each discovered source candidate, use one transient triage state:
+
+```text
+DISCOVERED_CANDIDATE
+QUICK_SCREENED
+DEEP_READ_REQUIRED
+EXCLUDED_DUPLICATE
+EXCLUDED_OUT_OF_SCOPE
+EXCLUDED_LOW_DECISION_VALUE
+ADMITTED_EVIDENCE
+```
+
+The quick screen may use title, source identity, date, snippet/summary, metadata, known duplicate lineage, and
+the material question it could answer. **Quick-screen material is discovery evidence only.** It may decide
+whether a deeper read is worth the cost, but it does not support the final claim unless the existing evidence
+rules independently allow that receipt class.
+
+Escalate to `DEEP_READ_REQUIRED` when at least one of these is true:
+- the candidate could answer or reverse a material research question;
+- it is a likely primary source or official source for a decision-bearing mutable fact;
+- it contains material counterevidence or a contradiction;
+- it may add a new competitor/substitute/reference entity or materially different evidence class;
+- the current claim cannot be admitted without inspecting the underlying passage/table/terms;
+- the candidate is ambiguous enough that exclusion from a shallow screen would create material recall risk.
+
+Exclude without deep reading when the candidate is a verified duplicate/republication, clearly outside the
+decision scope, or adds no decision-relevant information beyond already admitted current evidence. Record the
+reason in `what_was_found_and_excluded`.
+
+**Recall safeguard:** triage is not permission to prune unfamiliar candidates merely because the title looks
+weak or the source is low-ranked. If the candidate may represent a new alternative, contradiction, primary
+source, local-market entity, or displacement event, inspect enough original content to classify it safely.
+
+This triage is an efficiency control only. It may reduce repeated reading, not the required evidence coverage,
+competitor recall, counterevidence, requested-field closure, or full-report quality floor.
+
 ## 2. INDEPENDENCE and source diversity
 
 Independence is part of sufficiency, and it is separate from source count.
@@ -142,6 +183,8 @@ Rules:
   evidence never stated.
 - A content-marketing article promoted to independent evidence to fill the independence slot.
 - A discovered-but-unread URL presented as supporting evidence.
+- Every search result deep-read at equal cost even after duplicate/out-of-scope/low-decision-value screening.
+- A decision-relevant unfamiliar candidate shallow-pruned before its alternative/counterevidence value is safely classified.
 - Repeated user interruption for non-critical source access when an adequate accessible fallback exists.
 - Four republications of one origin counted as four sources.
 - Source count offered as evidence of sufficiency.
