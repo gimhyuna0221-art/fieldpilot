@@ -68,10 +68,9 @@ Concision removes duplication, not the reasoning behind an option.
 For product viability, differentiation, pricing or switching decisions, extend the
 existing alternative map with CUSTOMER_ADDED_VALUE:
 - Define the customer's job and usable completion, not just a generated answer.
-- Include general-purpose AI when it genuinely substitutes for that job, alongside
-  relevant software, templates, manual work, services and staying as-is.
-- Compare result quality and total human work: preparation, prompting, correction,
-  verification, transfer, execution and rework; include setup, fees and switching.
+- Include general-purpose AI when it genuinely substitutes for that job, and separately include DIY_WITH_AI custom-build substitution when coding/building agents could plausibly let the buyer create a fit-for-purpose tool; compare both alongside relevant software, templates, manual work, services and staying as-is.
+- Compare result quality and total human work: preparation, prompting/specification, building, debugging, correction,
+  verification, transfer, execution, maintenance and rework; include setup, fees, infrastructure/support and switching.
   Do not strawman the baseline with bad inputs or hide product preparation costs.
 - Distinguish advertised capability, reported experience, controlled execution,
   reuse and paid outcomes. Unrun comparisons remain UNKNOWN.
