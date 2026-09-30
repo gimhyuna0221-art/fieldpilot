@@ -16,6 +16,7 @@ metadata:
   industry_depth_extension_revision: "industry-depth-backstop-02"
   market_anchor_extension_revision: "market-anchor-01"
   runtime_quality_extension_revision: "runtime-quality-floor-01"
+  direction_extension_revision: "decision-direction-01"
 ---
 
 # FieldPilot
@@ -102,6 +103,24 @@ For a broad sellability decision, keep `MARKET_EXISTENCE / THIS_PRODUCT_DEMAND /
 Do not emit invented build-recommendation percentages, success probabilities, market scores or confidence scores as business facts. If an actual observed metric is reported, name its denominator, measurement and scope.
 
 When live web is unavailable, say the limitation once, answer from supplied/reusable evidence where allowed, and mark current mutable facts as unverified or hypothesis-level. Do not turn the answer into a wall of internal UNKNOWN labels.
+
+## DECISION-DIRECTION-01 — MARKET EVIDENCE → RECOMMENDED DIRECTION
+
+For broad viability, commercialization, market-entry, positioning, customer/segment focus, or
+build/change/hold decisions where direction is decision-material, load
+`references/modules/MARKET_DIRECTION_SYNTHESIS.md` **after** the relevant evidence, competitor/substitute
+map, product-state check and coverage audit, and **before** finalizing the recommendation.
+
+This layer does not create a new research engine. It compiles the existing evidence into the strongest
+defensible current direction, a materially viable alternative when one exists, explicit avoid/defer
+boundaries, reversal conditions, and the smallest discriminator. Reuse `CHANGE_OPTIONS`,
+`COMPARE_VARIANTS`, `DECISION_SUPPORT`, the professional brief/coverage controls, and the commercial
+claim ceiling; do not build parallel schemas.
+
+There is no required option count and no synthetic winner score. If evidence cannot separate the live
+directions, return `DIRECTION_UNRESOLVED` and the smallest evidence needed to discriminate them rather
+than forcing a recommendation. A recommended direction is evidence-bounded advice, not a guarantee of
+success.
 
 ## REFERENCE-FIRST-01 — REQUIRED BEFORE RESEARCH CONCLUSIONS
 
@@ -260,6 +279,7 @@ Use this route only when the user explicitly requests full/professional market r
 - `references/modules/RESEARCH_ANALYSIS_COMPILER.md` when returned structured/customer research requires analysis
 - `references/modules/PRIMARY_RESEARCH_PLATFORM_BRIDGE.md` when primary-research platform/instrument execution is decision-material
 - `references/modules/RESEARCH_QUESTION_COVERAGE_MAP.md`
+- `references/modules/MARKET_DIRECTION_SYNTHESIS.md` when direction is decision-material
 - `references/modules/MARKET_RESEARCH_DELIVERABLES.md`
 - `references/modules/COMMERCIAL_DELIVERABLE_SYSTEM.md`
 - `references/modules/PREMIUM_FINAL_REPORT_STANDARD.md`
