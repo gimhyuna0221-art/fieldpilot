@@ -36,7 +36,9 @@ jobs:
             skills.fieldpilot.tests.test_quality_max_contract \
             skills.fieldpilot.tests.test_reference_first_contract \
             skills.fieldpilot.tests.test_lifecycle_decision_router_contract \
-            skills.fieldpilot.tests.test_research_receipts_contract \\\n            skills.fieldpilot.tests.test_professional_uplift_regression_contract \\\n            skills.fieldpilot.tests.test_decision_direction_contract
+            skills.fieldpilot.tests.test_research_receipts_contract \
+            skills.fieldpilot.tests.test_professional_uplift_regression_contract \
+            skills.fieldpilot.tests.test_decision_direction_contract
       - name: Run FieldPilot tests
         run: python -m unittest discover -s skills/fieldpilot/tests -p 'test_*.py' -v
       - name: Package skill
