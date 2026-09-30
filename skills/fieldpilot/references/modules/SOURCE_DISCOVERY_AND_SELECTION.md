@@ -92,7 +92,7 @@ rules independently allow that receipt class.
 
 Escalate to `DEEP_READ_REQUIRED` when at least one of these is true:
 - the candidate could answer or reverse a material research question;
-- it is a likely primary/official source for a decision-bearing mutable fact;
+- it is a likely primary source or official source for a decision-bearing mutable fact;
 - it contains material counterevidence or a contradiction;
 - it may add a new competitor/substitute/reference entity or materially different evidence class;
 - the current claim cannot be admitted without inspecting the underlying passage/table/terms;
