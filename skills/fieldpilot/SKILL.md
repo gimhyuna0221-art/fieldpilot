@@ -16,6 +16,7 @@ metadata:
   industry_depth_extension_revision: "industry-depth-backstop-02"
   market_anchor_extension_revision: "market-anchor-01"
   runtime_quality_extension_revision: "runtime-quality-floor-01"
+  direction_extension_revision: "decision-direction-01"
 ---
 
 # FieldPilot
@@ -102,6 +103,24 @@ For a broad sellability decision, keep `MARKET_EXISTENCE / THIS_PRODUCT_DEMAND /
 Do not emit invented build-recommendation percentages, success probabilities, market scores or confidence scores as business facts. If an actual observed metric is reported, name its denominator, measurement and scope.
 
 When live web is unavailable, say the limitation once, answer from supplied/reusable evidence where allowed, and mark current mutable facts as unverified or hypothesis-level. Do not turn the answer into a wall of internal UNKNOWN labels.
+
+## DECISION-DIRECTION-01 — MARKET EVIDENCE → RECOMMENDED DIRECTION
+
+For broad viability, commercialization, market-entry, positioning, customer/segment focus, or
+build/change/hold decisions where direction is decision-material, load
+`references/modules/MARKET_DIRECTION_SYNTHESIS.md` **after** the relevant evidence, competitor/substitute
+map, product-state check and coverage audit, and **before** finalizing the recommendation.
+
+This layer does not create a new research engine. It compiles the existing evidence into the strongest
+defensible current direction, a materially viable alternative when one exists, explicit avoid/defer
+boundaries, reversal conditions, and the smallest discriminator. Reuse `CHANGE_OPTIONS`,
+`COMPARE_VARIANTS`, `DECISION_SUPPORT`, the professional brief/coverage controls, and the commercial
+claim ceiling; do not build parallel schemas.
+
+There is no required option count and no synthetic winner score. If evidence cannot separate the live
+directions, return `DIRECTION_UNRESOLVED` and the smallest evidence needed to discriminate them rather
+than forcing a recommendation. A recommended direction is evidence-bounded advice, not a guarantee of
+success.
 
 ## REFERENCE-FIRST-01 — REQUIRED BEFORE RESEARCH CONCLUSIONS
 
@@ -239,6 +258,8 @@ For broad viability/commercialization of an already-built product, §7.3 of the 
 
 For broad already-built-product decisions, or when risk/change options, a validation threshold, product pattern, handoff or variant comparison is decision-material, also apply [decision surfaces](references/modules/DECISION_SURFACES.md). It strengthens §7.3 inside the same answer: claim-level trace, full alternative map/economics, reality check, bounded risks/options and falsifiable experiments. Narrow price/fact questions do not load that module. Route B integrates relevant surfaces into its existing report; returning evidence loads only detail needed by affected claims.
 
+For broad viability/commercialization/market-entry/positioning/build-change-hold decisions where the market evidence leaves more than one plausible path, then apply [market direction synthesis](references/modules/MARKET_DIRECTION_SYNTHESIS.md) before finalizing `CURRENT_DECISION`. Use the current path as the baseline, compare only evidence-supported directions, select a `PRIMARY_DIRECTION` only when the evidence can separate it from alternatives, preserve reversal conditions, and make `ONE_NEXT_ACTION` the smallest discriminator when a discriminator is still needed. Do not print a duplicate framework; integrate the result into the existing buyer surface.
+
 If a distinct documented operator/founder lens can materially expose a trade-off or blind spot after the base decision is formed, load [evidence-grounded decision council](references/modules/EVIDENCE_GROUNDED_DECISION_COUNCIL.md). Use at most 2–3 verified task-fit lenses, never celebrity voting or impersonation.
 
 If the ranking between feasible actions can materially change because of likely actor reactions, then after the real-evidence alternative map is established load [scenario stress test](references/modules/SCENARIO_STRESS_TEST.md). Keep every reaction synthetic and use it only to expose second-order risks, counter-moves and real-world checks; never promote it into demand or probability.
@@ -258,6 +279,7 @@ Use this route only when the user explicitly requests full/professional market r
 - `references/modules/RESEARCH_ANALYSIS_COMPILER.md` when returned structured/customer research requires analysis
 - `references/modules/PRIMARY_RESEARCH_PLATFORM_BRIDGE.md` when primary-research platform/instrument execution is decision-material
 - `references/modules/RESEARCH_QUESTION_COVERAGE_MAP.md`
+- `references/modules/MARKET_DIRECTION_SYNTHESIS.md` when direction is decision-material
 - `references/modules/MARKET_RESEARCH_DELIVERABLES.md`
 - `references/modules/COMMERCIAL_DELIVERABLE_SYSTEM.md`
 - `references/modules/PREMIUM_FINAL_REPORT_STANDARD.md`
@@ -294,7 +316,7 @@ Keep listed price, active offer, preorder, observed purchase, repeat purchase/re
 
 ## COMPLETION CONTRACT
 
-A bounded answer is complete when it gives the strongest defensible current decision, material decisive evidence with usable source locators, material counterevidence, unknowns/claim ceiling, exact build/change/hold implication, and one next action. For an explicit narrow/source-constrained request, completion instead means **every literal requested field** is supported or honestly blocked after exhausting allowed decision-relevant official/primary routes for that field; an avoidable UNKNOWN is incomplete. Do not add methodology exposition, giant comparison tables, complete ledgers, or audit history unless requested or necessary to protect decision integrity.
+A bounded answer is complete when it gives the strongest defensible current decision, material decisive evidence with usable source locators, material counterevidence, unknowns/claim ceiling, exact build/change/hold implication, and one next action. When direction is decision-material, completion also requires the strongest defensible current direction (or `DIRECTION_UNRESOLVED`), the material alternative if one exists, and the reversal condition that would change the recommendation. For an explicit narrow/source-constrained request, completion instead means **every literal requested field** is supported or honestly blocked after exhausting allowed decision-relevant official/primary routes for that field; an avoidable UNKNOWN is incomplete. Do not add methodology exposition, giant comparison tables, complete ledgers, or audit history unless requested or necessary to protect decision integrity.
 
 For any identifiable case, the first response is that complete answer, not a question; questions come after it (QUESTION_GATE). Every literal question in the user's message is answered, the case floor is present whatever the wording, and the answer passes the expert-twin check.
 
