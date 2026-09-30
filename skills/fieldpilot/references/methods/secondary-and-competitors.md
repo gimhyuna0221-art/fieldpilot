@@ -28,7 +28,7 @@ Cards implement the Section 10.4 contract. Version `1.5.0`. Route through `../ME
 - **supported_proposition_types:** `COMPETITIVE_OR_SUBSTITUTION`, `MECHANISM_OR_JOB`, `BUYING_SYSTEM`, and selected `IMPLEMENTATION_OR_FEASIBILITY` questions about available choices, switching, and workflow.
 - **unsupported_proposition_types:** preference, willingness to switch/pay, current target demand, prevalence, retention, or causality from feature/offer presence alone.
 - **required_evidence_dimensions:** decision-relevant alternative universe, comparable dimensions, source type/control, observed versus claimed behavior, switching/no-action context, evidence gaps.
-- **minimum_design_conditions:** define the decision and selection criteria; include proportionately direct competitors, indirect substitutes, manual/internal workarounds, adjacent/bundled services, paid incumbents/switching costs, delay/tolerance/do nothing.
+- **minimum_design_conditions:** define the decision and selection criteria; include proportionately direct competitors, indirect substitutes, manual/internal workarounds, DIY_WITH_AI custom-build substitution when plausible, adjacent/bundled services, paid incumbents/switching costs, delay/tolerance/do nothing.
 - **sample_and_unit_requirements:** sample alternatives and evidence sources by target use case/channel/geography, not search rank alone; preserve customer/account/site/time units behind use or commercial evidence.
 - **instrument_or_stimulus_requirements:** Alternative Map with documented offer/availability/pricing/target, vendor claims, observed purchase/use/renewal/switching/complaint/workaround, selection context, and gaps.
 - **fieldwork_and_quality_controls:** dated source capture, comparable definitions/terms, vendor-control label, direct observation/interview provenance, search limits and missing-category review.
@@ -49,6 +49,31 @@ direct competitor," or "white space," run `DIRECT_COMPETITOR_RECALL_CLOSURE`
 (`references/modules/BOUNDED_BEHAVIORAL_CLOSURE_REPAIR.md` §2). A near-exact candidate surfaced by that
 closure search must enter the Alternative Map before the claim ships; an incomplete closure search
 downgrades the claim to `SEARCHED_NOT_FOUND` / `COVERAGE_INCOMPLETE` rather than a bare absence claim.
+
+### v1.9.9-rc04+ — DIY_WITH_AI substitution
+
+When AI coding/building tools make it plausible that the target user could create a fit-for-purpose tool instead
+of buying the product, treat `DIY_WITH_AI` as a distinct substitute class rather than hiding it inside generic
+"AI" or "manual work."
+
+A `DIY_WITH_AI` alternative may include general-purpose coding agents, app builders, spreadsheet/automation
+agents, or code-generation workflows used to make a custom internal/personal tool.
+
+Evaluate it only when material to the buyer's job. Record:
+- which job/result can realistically be reproduced;
+- setup/specification/prompting burden;
+- build/debug/QA time and skill burden;
+- ongoing maintenance, updates, hosting/infrastructure and support burden;
+- data, integration, security, compliance and reliability requirements where material;
+- whether the alternative is a one-person/internal solution or something that must be shared, supported or sold;
+- what remains meaningfully easier/better by buying the product rather than building it.
+
+Do not equate "AI can generate code" with a complete substitute. A generated prototype is not evidence of reliable
+deployment, support, maintenance, distribution, compliance or lower total burden. Conversely, do not omit
+DIY_WITH_AI when the product's customer-visible value is mostly a small replicable feature bundle.
+
+Observed customer use of DIY tools is stronger than theoretical buildability. When only buildability is known,
+label the substitute as plausible/UNVERIFIED rather than observed market behavior.
 
 ### v1.9.9-rc02 — LOCAL_GEOGRAPHY_CLOSURE
 
