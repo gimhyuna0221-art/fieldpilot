@@ -96,6 +96,7 @@ Include only applicable sections, but a full engagement must explicitly assess w
 - a documented decision council when source-backed operator/founder lenses can materially expose a trade-off or blind spot, governed by `references/modules/EVIDENCE_GROUNDED_DECISION_COUNCIL.md`; lens agreement is interpretation, not new market evidence;
 - an evidence-grounded scenario stress test when downstream actor reactions are decision-material, governed by `references/modules/SCENARIO_STRESS_TEST.md`; synthetic reactions never count as observed market evidence;
 - service-vs-market assessment and the five-valued user-case gap diagnosis;
+- market direction synthesis when direction is decision-material: current baseline, evidence-supported feasible directions, primary direction or DIRECTION_UNRESOLVED, strongest viable alternative when one exists, avoid/defer boundary when supported, reversal conditions, and the smallest discriminator;
 - prioritized actions (`P0 / P1 / P2 / NOT_YET`) and do-not-build, each with its evidence basis;
 - source discovery and selection strategy, and the evidence independence profile;
 - conditional regulatory/jurisdiction context where material;
@@ -376,6 +377,14 @@ Recommended structure, omitting only genuinely inapplicable sections:
 ### Opportunities
 ### Risks / Entry Barriers
 ### 17a. User-Case Gap Diagnosis
+### 17b. Market Direction Synthesis (when decision-material)
+#### Current Baseline
+#### Feasible Directions
+#### Primary Direction / DIRECTION_UNRESOLVED
+#### Strongest Viable Alternative (when applicable)
+#### Avoid / Defer Boundary (when supported)
+#### Reversal Conditions
+#### Next Discriminator
 ## 18. Direct Research Status and Results
 ## 19. Unverified / Not-Tested Questions
 ## 20. Findings
@@ -519,6 +528,7 @@ A paying user should be able to answer these after reading the report:
 - For each material candidate factor, what is actually evidenced on the successful and negative/low-outcome sides, which factors are shared versus plausibly discriminating versus untestable, and what alternative explanations remain?
 - How does my case compare with both outcome sides rather than only with market leaders?
 - Where is my case genuinely different rather than simply worse, and which differences do not matter at all?
+- Which market direction is currently best supported, what is the strongest viable alternative, what should be avoided or deferred, and what evidence would reverse that direction?
 - What do I do first, what do I deliberately not build yet, and what evidence is each of those resting on?
 - What is actually moving in this market right now, how do I know it is more than a spike, and is there any reason to act now rather than later?
 - If this research recommends that I talk to or observe people, what do I owe those people before I start?
