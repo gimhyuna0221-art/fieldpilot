@@ -159,7 +159,12 @@ class ProfessionalUpliftRegressionContract(unittest.TestCase):
             "skip",
         ):
             self.assertIn(marker, combined)
-        self.assertTrue(\n            "sample-size" in combined or "sample size" in combined or "n or saturation rationale" in combined,\n            "direct-research QC must preserve a sample-size or saturation rationale",\n        )\n\n    def test_professional_controls_are_wired_into_current_deliverable(self):
+        self.assertTrue(
+            "sample-size" in combined or "sample size" in combined or "n or saturation rationale" in combined,
+            "direct-research QC must preserve a sample-size or saturation rationale",
+        )
+
+    def test_professional_controls_are_wired_into_current_deliverable(self):
         for marker in (
             "references/delivery/CLIENT_DECISION_BRIEF.md",
             "references/delivery/EVIDENCE_PLAN_AND_COVERAGE_AUDIT.md",
