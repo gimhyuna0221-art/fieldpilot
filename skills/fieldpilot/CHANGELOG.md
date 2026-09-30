@@ -1,5 +1,20 @@
 # FieldPilot Changelog
 
+## evidence-opportunity-01 — Evidence Triage, DIY-with-AI Substitution, Market Displacement
+
+This bounded extension incorporates three decision-quality patterns without narrowing competitor discovery or adding a new data platform.
+
+- Added decision-value evidence triage: discover broadly, quick-screen candidates, deep-read sources that can answer/reverse material questions, add a new entity/evidence class, provide primary mutable facts or material counterevidence.
+- Quick-screen snippets/summaries remain discovery material and are never promoted to inspected evidence by the triage step.
+- Added a recall safeguard so unfamiliar potential competitors, local entities, contradictions, primary sources and displacement events cannot be shallow-pruned merely to save reading.
+- Added `DIY_WITH_AI` as a distinct substitute when a buyer can plausibly use coding/building agents to create a fit-for-purpose tool; total build/debug/maintenance/integration/support burden matters, not code generation alone.
+- Added `MARKET_DISPLACEMENT_TRIGGER` for retirement/shutdown, feature removal, price increases, free-to-paid moves, plan tightening, API access changes, policy/regulatory change and similar forced-switch events.
+- Displacement is a supply/alternative-environment change, not automatic demand, WTP, switching or whitespace proof.
+- Wired DIY substitution and verified displacement events into `MARKET_DIRECTION_SYNTHESIS`.
+- Added targeted regression tests for triage/recall, DIY substitute coverage and displacement claim ceilings.
+
+No persistent crawler, always-on monitor, source-count quota, synthetic opportunity score or new paid dependency is introduced.
+
 ## decision-direction-01 — Market Evidence to Recommended Direction
 
 This bounded extension turns researched market evidence into a direction recommendation without adding a new research engine.
