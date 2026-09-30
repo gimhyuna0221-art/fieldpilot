@@ -202,6 +202,59 @@ manufacture urgency. "Everyone is talking about it" is attention, not a window. 
 a real finding and must not be reported as an opportunity. Timing claims inherit the trend states
 they rest on: a `UNCERTAIN` trend cannot support `TIMING_ADVANTAGE_PRESENT`.
 
+## 5a. MARKET_DISPLACEMENT_TRIGGER — forced search for a replacement
+
+Some market opportunities begin when an incumbent alternative changes in a way that makes users actively look
+for another solution. Detect this as a **displacement signal**, not as automatic demand proof.
+
+Candidate trigger types:
+
+```text
+PRODUCT_RETIREMENT_OR_SHUTDOWN
+FEATURE_REMOVAL
+PRICE_INCREASE
+FREE_TO_PAID
+PLAN_LIMIT_TIGHTENING
+API_DEPRECATION_OR_ACCESS_RESTRICTION
+POLICY_OR_REGULATORY_CHANGE
+ACQUISITION_OR_MIGRATION_CHANGE
+RELIABILITY_OR_SUPPORT_BREAKDOWN
+```
+
+For a material trigger record:
+
+```text
+DISPLACEMENT_TRIGGER
+  trigger_type
+  incumbent_or_alternative
+  announced_date
+  effective_date_or_status
+  affected_product_plan_geography
+  affected_user_job
+  what_users_must_change
+  official_source
+  independent_or_user_reaction_evidence
+  replacement_search_or_switching_evidence
+  available_substitutes
+  unresolved_transfer_or_demand_gap
+  direction_or_timing_implication
+```
+
+Rules:
+- Distinguish **announced**, **effective**, and **completed** changes. Do not backdate the event from a later page.
+- The trigger proves a change in the alternative environment, not that users want the user's product, will switch,
+  will pay, or will remain. Those commercial rungs stay separate.
+- A creator building a replacement for themselves is evidence that replacement can be feasible for that case; it
+  is not market-wide demand evidence.
+- A trigger becomes more decision-relevant when there is corroborated evidence of affected users searching,
+  complaining, migrating, paying for substitutes, or facing material switching friction.
+- Check the strongest current substitutes before calling the event whitespace. An incumbent exit can leave a
+  crowded replacement market.
+- Feed a verified material trigger into `WHY_NOW` and `MARKET_DIRECTION_SYNTHESIS`; it may support a
+  time-bounded direction toward displaced users, but only within the evidence/coverage ceiling.
+- Do not create an always-on monitor unless an actual scheduler is authorized. On ordinary runs, check current
+  displacement events only when they can change the active decision.
+
 ## 6. Refresh interaction
 
 `SUCCESS_CASE_SET`, `COMPARATOR_SET` and `TREND_STATE` are refreshable dependencies. On a
@@ -219,4 +272,6 @@ is worse than an absent one, because it looks current. See
 - Attention evidence used to claim adoption.
 - An undated volatile page cited with no capture and no re-checkability.
 - Manufactured urgency when the honest answer is that there is no current timing advantage.
+- Incumbent retirement/price/policy change promoted directly into demand or WTP for the user's product.
+- A displacement event called whitespace without checking current replacement alternatives.
 - A trend score or percentage invented from a handful of observations.
