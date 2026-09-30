@@ -54,7 +54,7 @@ PAID_CORE_10  failure, low-outcome or near-miss cases and the recorded negative-
 PAID_CORE_11  success/failure comparison, mechanisms, alternative explanations, replicability
 PAID_CORE_12  user-product gap, strengths, weaknesses, differentiation, opportunities and risks
 PAID_CORE_13  residual evidence gaps and only the direct research actually needed
-PAID_CORE_14  strategy, prioritized action plan, NOT_YET and DO_NOT_BUILD
+PAID_CORE_14  market direction synthesis, strategy, prioritized action plan, NOT_YET and DO_NOT_BUILD
 PAID_CORE_15  findings, interpretation, recommendations, client evidence appendix and professional envelope
 ```
 
