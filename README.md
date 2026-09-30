@@ -42,6 +42,9 @@
 - 경쟁사 방법 반영 버전: `competitor-coverage-01-r2`
 - 품질 우선 프로필: `quality-max-01`
 - 산업 심층 백스톱: `industry-depth-backstop-02`
+- 시장 앵커: `market-anchor-01`
+- 런타임 품질 바닥선: `runtime-quality-floor-01`
+- 시장 방향 합성: `decision-direction-01`
 - 시장 앵커·지역 확장: `market-anchor-01`
 
 [최신 공개 저장소](https://github.com/gimhyuna0221-art/fieldpilot)에서 받은 `skills/fieldpilot` 폴더 전체가 설치되어 있어야 합니다. `SKILL.md` 하나만 복사하면 필요한 참고 자료와 계산 도구가 빠집니다.
