@@ -31,12 +31,13 @@ Direction synthesis consumes, when available:
 - `CLIENT_DECISION_BRIEF` — the decision, owner/user, choice set, stakes, and evidence that would change it;
 - `EVIDENCE_PLAN + COVERAGE_AUDIT` — what is ANSWERED / PARTIAL / UNKNOWN;
 - `EVIDENCE_TRACE`, provenance, freshness, counterevidence, and claim ceilings;
-- `COMPETITIVE_ALTERNATIVES`, including direct, substitute, manual, service, general-AI, spreadsheet, and
+- `COMPETITIVE_ALTERNATIVES`, including direct, substitute, manual, service, general-AI, DIY_WITH_AI custom-build, spreadsheet, and
   do-nothing options where material;
 - `PRODUCT_STATE` and the user-case gap;
 - `DECISION_SURFACES` `CHANGE_OPTIONS` and `COMPARE_VARIANTS` when they are already applicable;
 - `DECISION_SUPPORT` commitment boundaries and cheapest-next-informative-action logic;
-- commercial-evidence rung separation for pricing/payment/WTP decisions.
+- commercial-evidence rung separation for pricing/payment/WTP decisions;
+- verified `MARKET_DISPLACEMENT_TRIGGER` events when an incumbent retirement, feature/price/plan/API/policy change can materially alter who is forced to seek an alternative.
 
 Do not rebuild these as parallel schemas or databases.
 
@@ -69,7 +70,8 @@ Rules:
 - A change in customer, job, offer, channel, or business model is not automatically a pivot; describe the
   actual material change.
 - A direction may be unattractive because of weak evidence, switching burden, implementation burden, access,
-  regulation, economics, or a stronger substitute. Name which one; do not hide it inside a generic score.
+  regulation, economics, DIY_WITH_AI substitution, or a stronger substitute. Name which one; do not hide it inside a generic score.
+- A displacement-trigger direction must name the affected user/job and the verified change. The event itself does not prove demand or payment.
 
 ## 4. Direction synthesis states
 
