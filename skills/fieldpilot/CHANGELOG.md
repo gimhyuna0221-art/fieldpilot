@@ -1,5 +1,21 @@
 # FieldPilot Changelog
 
+## decision-direction-01 — Market Evidence to Recommended Direction
+
+This bounded extension turns researched market evidence into a direction recommendation without adding a new research engine.
+
+- Added `references/modules/MARKET_DIRECTION_SYNTHESIS.md`.
+- Added `direction_extension_revision: "decision-direction-01"` to the kernel.
+- Reuses the existing client decision brief, evidence plan/coverage audit, evidence trace, competitor/substitute map, product state, `CHANGE_OPTIONS`, `COMPARE_VARIANTS`, commitment boundary and commercial claim ceilings.
+- Adds `PRIMARY_DIRECTION`, a material alternative when one exists, supported `AVOID_OR_DEFER` boundaries, mandatory reversal conditions, and the smallest discriminating next action.
+- Adds `DIRECTION_UNRESOLVED` when evidence cannot separate live directions; no forced winner, option quota, success probability or synthetic market score.
+- Keeps market direction distinct from next action. The next action tests whether the direction should keep its rank.
+- Adds a professional-report `Market Direction Synthesis` slot when direction is decision-material.
+- Restored explicit regression tests for the August professional-grade P0/P1 controls so decision-direction work cannot silently delete the client brief, evidence/coverage plan, professional delivery envelope, executive decision/impact verification, negative-evidence/falsifier protection, or direct-research QC.
+- Added the direction and professional-uplift regression contracts to targeted CI.
+
+This is a decision-synthesis improvement. It does not establish that FieldPilot chooses the objectively correct strategy, guarantees outcomes, or replaces real payment/customer evidence.
+
 ## runtime-quality-floor-01 — Shared Process Floor, Honest Degradation
 
 This bounded continuation adds a host-neutral runtime quality floor without claiming model equivalence.
