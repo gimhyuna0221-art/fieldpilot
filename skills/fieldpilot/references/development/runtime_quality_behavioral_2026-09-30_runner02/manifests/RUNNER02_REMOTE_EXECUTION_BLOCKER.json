@@ -1,0 +1,64 @@
+{
+  "run": "RUN-P007-20260929-FIELDPILOT-RUNTIME-BEHAVIOR-RUNNER02",
+  "claim": "CLAIM-P007-FIELDPILOT-RUNTIME-BEHAVIOR-RUNNER02",
+  "candidate_commit": "f3dc869b032091d611dfa016007d2612bdd2fb03",
+  "target_pr": 6,
+  "target_pr_state": {
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true,
+    "base": "feat/locale-first-market-anchor",
+    "base_sha": "c59dc56c6765cdaf3d69bf4b5398486bb96cfa06",
+    "head": "worker/fieldpilot-runtime-quality-floor01",
+    "head_sha": "f3dc869b032091d611dfa016007d2612bdd2fb03"
+  },
+  "reused_rq1": {
+    "countable": true,
+    "resolved_model": "claude-sonnet-5-5",
+    "runtime_quality_extension_revision": "runtime-quality-floor-01",
+    "market_anchor_extension_revision": "market-anchor-01",
+    "raw_reply_sha256": "ffc51ab3e0fbca951f8411ad39a846abf755b162a053bbfbe78d48828a607d40",
+    "source_run": "RUN-P007-20260929-FIELDPILOT-RUNTIME-BEHAVIOR-RUNNER01"
+  },
+  "predecessor_rq2": {
+    "countable": false,
+    "contaminated": true,
+    "resolved_model_observed": "claude-haiku-4-5-20251001",
+    "reason": "mandatory SELF_CHECK omitted in first complete RUN01 reply"
+  },
+  "runner02_remote_preflight": {
+    "attempted_at_kst": "2026-09-30T11:03:00+09:00",
+    "devices": [
+      {
+        "name": "DESKTOP-I3LPM8E",
+        "status": "offline",
+        "ping": "failed"
+      },
+      {
+        "name": "LAPTOP-K1MPVN79",
+        "status": "offline",
+        "ping": "failed"
+      }
+    ],
+    "connector_error": "No devices available; connect a device to use remote tools"
+  },
+  "fresh_cases": {
+    "RQ2_WEAK_LIVE_KO": "NOT_RUN",
+    "RQ3_NARROW_OFFICIAL": "NOT_RUN",
+    "RQ4_NO_WEB": "NOT_RUN",
+    "RQ5_SOURCE_BOUND": "NOT_RUN",
+    "RQ6_LOCALE_KO_NO_COUNTRY": "NOT_RUN",
+    "RQ7A_EXPLICIT_US_OVERRIDE": "NOT_RUN",
+    "RQ7B_EXPLICIT_KR_OVERRIDE": "NOT_RUN"
+  },
+  "new_raw_outputs": [],
+  "implementation_changed": false,
+  "prompt_tuned_after_failure": false,
+  "merge": false,
+  "release": false,
+  "listing": false,
+  "publication": false,
+  "paid_purchase": false,
+  "terminal": "BLOCKED_REMOTE_EXECUTION"
+}
