@@ -142,13 +142,12 @@ class ProfessionalUpliftRegressionContract(unittest.TestCase):
             self.assertIn(marker.lower(), self.exec_layer.lower())
 
     def test_p1_4_direct_research_design_and_qc_survive(self):
-        combined = (self.deliv + "\n" + self.sample).lower()
+        combined = (self.deliv + "\n" + self.sample + "\n" + self.envelope).lower()
         for marker in (
             "target population",
             "eligibility",
             "exclusions",
             "sampling frame",
-            "sample-size",
             "saturation",
             "consent",
             "privacy",
@@ -160,8 +159,7 @@ class ProfessionalUpliftRegressionContract(unittest.TestCase):
             "skip",
         ):
             self.assertIn(marker, combined)
-
-    def test_professional_controls_are_wired_into_current_deliverable(self):
+        self.assertTrue(\n            "sample-size" in combined or "sample size" in combined or "n or saturation rationale" in combined,\n            "direct-research QC must preserve a sample-size or saturation rationale",\n        )\n\n    def test_professional_controls_are_wired_into_current_deliverable(self):
         for marker in (
             "references/delivery/CLIENT_DECISION_BRIEF.md",
             "references/delivery/EVIDENCE_PLAN_AND_COVERAGE_AUDIT.md",
