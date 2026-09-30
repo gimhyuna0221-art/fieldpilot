@@ -52,7 +52,7 @@ downgrades the claim to `SEARCHED_NOT_FOUND` / `COVERAGE_INCOMPLETE` rather than
 
 ### v1.9.9-rc04+ — DIY_WITH_AI substitution
 
-When AI coding/building tools make it plausible that the target user could create a fit-for-purpose tool instead
+When AI coding/building agents or tools make it plausible that the target user could create a fit-for-purpose tool instead
 of buying the product, treat `DIY_WITH_AI` as a distinct substitute class rather than hiding it inside generic
 "AI" or "manual work."
 
