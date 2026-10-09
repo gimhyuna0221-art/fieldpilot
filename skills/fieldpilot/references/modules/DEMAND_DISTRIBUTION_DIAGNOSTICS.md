@@ -17,6 +17,30 @@ NEXT_DECISION
 If measurement is unreliable, diagnose instrumentation before product or market conclusions.
 If the core value path is technically unreliable, load `PRODUCT_READINESS_AND_SIGNAL_INTEGRITY.md` before interpreting the funnel as demand evidence.
 
+## Diagnose before prescribing
+
+For a growth or marketing decision, separate competing explanations for customer
+fit, offer, message, channel/reach, activation, retention, payment and measurement.
+They are hypotheses until discriminating evidence supports them. Use the existing
+PLAUSIBLE_CAUSES and EVIDENCE_FOR_EACH_CAUSE fields, not another scoring framework.
+For each decision-material explanation record the supporting observation, rival
+explanation/counterevidence, missing observation and result that would change it.
+
+Locate the symptom with the actual stage entry/exit, eligible denominator,
+segment/channel and observation window. Check whether the reported drop measures
+the intended behavior; use `PRODUCT_ANALYTICS_EXECUTION.md` for event or attribution
+detail. Aggregate clicks can hide poor B2B account fit or lack of buying authority:
+inspect qualification, accepted opportunity and payment evidence when available,
+without fabricating CRM access. High traffic at a local service may instead fail
+at booking availability or the human handoff; inspect that path when relevant.
+
+No data means a diagnosis hypothesis and an ordered evidence check, not a declared
+bottleneck. Inspect accessible product/supplied records first, explain which
+uncertainty matters most, and choose one feasible discriminating action. Do not
+prescribe more acquisition when activation, retention, payment or measurement is
+the better-supported bottleneck. For an explicit channel-options-only request,
+give conditional fit options within scope rather than forcing a full diagnosis.
+
 ## States
 
 ### NO_IMPRESSIONS

@@ -85,6 +85,14 @@ Use `PASS / SUSPECT / FAILED / UNKNOWN` with evidence.
 
 If one is `FAILED` and sits upstream of the observed funnel failure, do not make a strong demand claim until the contamination is isolated or corrected.
 
+The presence of an event name, a dashboard, or an experiment-plan field is not a
+verified observation path. For decision-material measurements, inspect the actual
+collection source and whether the intended event can be retrieved and reconciled.
+A working test event checks plumbing only; it is not a real customer's behavior.
+Use `PRODUCT_ANALYTICS_EXECUTION.md` §1 for attribution and economic interpretation.
+If logs or permissions are missing, preserve UNKNOWN / NOT_OBSERVABLE and limit
+only the dependent conclusion; do not turn unavailable telemetry into zero demand.
+
 ## TRACTION QUALITY > HEADLINE TRACTION
 
 Do not treat one headline metric as durable success.

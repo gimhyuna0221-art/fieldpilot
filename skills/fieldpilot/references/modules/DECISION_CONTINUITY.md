@@ -253,6 +253,29 @@ When broad viability activates §2.1, or when target/positioning is itself the a
 
 Place the customer/alternative/reason synthesis inside CURRENT_DECISION with links in DECISIVE_EVIDENCE; retain COUNTEREVIDENCE, attach the unresolved parts to UNKNOWNS and connect the implication to BUILD_CHANGE_OR_HOLD. Render in the user's language. A candidate customer and proposed benefit are recommendations, not proof that this person will choose or buy. Respect §6's commercial ceiling and §5's overlap/gap safeguards.
 
+**Buying-system check (marketing-judgment-01).** When roles can change targeting,
+the offer, channel or payment interpretation, distinguish the user doing the job,
+the buyer choosing the solution, the payer funding it, and the approver authorizing
+it. A person may occupy several roles; record that only when supported. Reuse the
+case and evidence trace for each material role's trigger/job, current alternative,
+payment authority, risk/objection and proof needed, with a source or UNKNOWN. Do
+not turn job titles, demographics or enthusiastic user feedback into purchasing
+authority. This is a conditional check, not a required persona table or new intake.
+
+For B2B, inspect material procurement, security, integration and sales-cycle
+constraints before treating user adoption as a purchase opportunity. For consumer
+decisions, consider the actual individual/household decision when material; for a
+marketplace, keep the two sides' jobs and payers separate. Public information can
+suggest roles, not verify a specific organization's buying committee. Choose a
+candidate segment using observed need/trigger, alternatives, reachability,
+authority, behavior, economic constraints and contrary evidence, not fixed weights.
+
+Connect the supported role and trigger to CURRENT_DECISION and WHY_SWITCH_OR_NOT;
+carry missing authority/proof to UNKNOWNS and its consequence to BUILD_CHANGE_OR_HOLD.
+FIRST_PAID_PROOF must reach the relevant buyer/payer under §7.4; favorable feedback
+from a user without authority cannot clear it. A material role gap permits a
+bounded hypothesis or HOLD on the dependent offer, not a block on all useful advice.
+
 A non-feature action can be correct: clarify the target, change the offer/message, test a channel, keep the product as-is or hold. Do not equate improvement with adding features. Existing optional-research and channel contracts govern any follow-up; no new mandatory customer homework, spending, direct implementation or market-success score is authorized.
 
 ### 7.2 PLAIN_LANGUAGE_DELIVERY — easy to read, not thinner underneath
@@ -352,6 +375,13 @@ PRIOR_DECISION
 ```
 
 Preserve the prior commercial rung with its evidence ID; new intent must not erase an observed transaction or turn that transaction into broad WTP. Carry unresolved payment/retention limits forward. Update affected buyer-surface fields only.
+
+For returned marketing evidence, dispatch only affected claims: changed buying
+roles/authority use §7.1; changed funnel symptoms use
+`DEMAND_DISTRIBUTION_DIAGNOSTICS.md`; changed budget/performance, attribution or
+economic inputs use `PRODUCT_ANALYTICS_EXECUTION.md` §1. A new ROAS screenshot does
+not bypass the measurement/economics checks because it arrives through Route D.
+Carry valid prior evidence forward; do not reopen unrelated market research.
 
 Do not re-run unrelated market sections. Reuse unchanged verified evidence when its freshness window still fits the claim. Recheck time-sensitive price, release, availability, policy, or trend evidence when it can change the affected decision. If dependency mapping is unclear, perform a bounded dependency review rather than silently trusting stale evidence or automatically rerunning the whole market.
 

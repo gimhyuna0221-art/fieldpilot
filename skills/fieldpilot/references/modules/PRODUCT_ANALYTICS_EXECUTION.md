@@ -15,6 +15,46 @@ business question -> eligible unit -> exposure/entry event -> ordered outcome ev
 
 Keep an event dictionary: name, trigger, required properties, source system, timestamp semantics, unique event key and known gaps. Reconcile duplicates by stable event ID; identical IDs with conflicting payloads are a data error, not an arbitrary row to discard. Do not join anonymous and logged-in IDs without a supplied or verified identity mapping. Never infer people from pageviews.
 
+### Measurement meaning before budget or scale decisions
+
+For every decision-bearing metric, preserve definition, source/collection path,
+unit, numerator/denominator, window and known tracking limits. Classify its meaning
+as OBSERVED, PLATFORM-ATTRIBUTED, EXPERIMENTALLY-INCREMENTAL, MODELED or UNKNOWN.
+These describe the specific claim, not an interchangeable evidence ranking:
+observed orders may be real while the allocation of credit to ads is modeled or
+platform-attributed. A label never repairs a missing design or inaccessible data.
+
+Before a material channel/budget conclusion, verify the conversion event and
+collection path, then reporting/attribution scope (window, click/view rules,
+identity, modeled conversions and overlap when relevant). Reconcile with an
+independent analytics/backend/payment source when accessible. Conflicting platform
+and backend counts remain separate until definitions/windows/dedup explain them;
+do not sum overlapping credit or silently choose the largest figure. Without an
+adequate comparison/assignment design, attributed conversions and ROAS do not
+establish incremental causal lift. Unreconciled scope remains a visible limit.
+
+Before accepting an incremental causal claim, apply the appropriate
+AB_RANDOMIZED_EXPERIMENT or QUASI_EXPERIMENT card in
+`references/methods/experiments.md` (skill-root-relative), including its integrity,
+identification and uncertainty gates. EXPERIMENTALLY-INCREMENTAL requires an
+eligible experimental result; a quasi-experimental estimate stays conditional on
+its named design/assumptions and is not relabeled a randomized result. A failed
+gate permits the supported observational finding, never a causal upgrade.
+
+For profitability, connect verified spend and acquired-customer definition to
+revenue basis/window, discounts/refunds, variable delivery/fulfillment/support costs,
+contribution definition and allocation. Count each cost once and state what is
+included; net receipts may already exclude fees or refunds. Missing economics stay
+UNKNOWN. ROAS is a scoped revenue-to-ad-spend ratio, not profit; positive attributed
+revenue does not establish a profitable or incremental campaign. Retention, repeat
+and payback require compatible cohorts/windows, not optimistic LTV assumptions.
+
+For a proposed measurement, name the accessible source, owner/handoff, record and
+retrieval check. A schema or plan remains PLANNED until collection is verified.
+If inaccessible, provide a bounded measurement handoff rather than inventing SDK
+installation, private logs, payment records or a successful experiment. These
+checks do not authorize account connections, uploads, spending or implementation.
+
 ## 2. Compute with auditable denominators
 
 - For a closed ordered funnel, a later stage qualifies only after its preceding stage for the same eligible unit within the specified window. For an open funnel, explicitly define allowed entry stages, entry assignment and denominators; enforce sequence only after that unit's allowed entry, not before it. A payment before signup does not count as a post-signup conversion. Explain whether simultaneous timestamps can be ordered by an actual sequence key.
