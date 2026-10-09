@@ -1,0 +1,14 @@
+interface:
+  display_name: 파일럿
+  short_description: 한 스킬로 기본 시장조사와 명시 선택한 SNS 관심사·채널 콘셉트 검토
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+  default_prompt: Use $fieldpilot 기본 for product and business research, or $fieldpilot
+    SNS for creator-interest and channel-concept work.
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

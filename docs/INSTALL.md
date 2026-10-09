@@ -66,3 +66,15 @@ python .claude/skills/fieldpilot/tools/render_report.py --input REPORT.md --outd
 
 - [Claude Code 스킬](https://code.claude.com/docs/en/skills)
 - [Codex 스킬](https://learn.chatgpt.com/docs/build-skills)
+
+## 기본 / SNS 모드 선택
+
+설치 대상은 `skills/fieldpilot` 하나입니다. 전체 폴더의 `references/sns`를 포함해 설치하세요. 별도 `fieldpilot-sns` 스킬은 필요하지 않습니다.
+
+- ChatGPT에서 스킬을 선택: `@fieldpilot 기본` 또는 `@fieldpilot SNS`
+- Codex CLI/IDE: `$fieldpilot 기본` 또는 `$fieldpilot SNS`
+- Claude Code: `/fieldpilot 기본` 또는 `/fieldpilot SNS`
+
+또는 해당 스킬을 선택한 뒤 ‘기본’ / ‘SNS 모드’와 원하는 일을 말하세요. 모드명은 같은 스킬에 전달하는 요청 문구이며, 플랫폼에 등록한 복수 호출 별칭이 아닙니다. 모드 없이 호출하면 기본 사업 진단입니다. 단순 SNS 광고 질문은 SNS 창작자 모드를 켜지 않습니다.
+
+SNS 요청 예: ‘SNS 모드로 내 관심사에서 채널 주제를 찾고 첫 대본과 캡션을 만들어 줘.’ 요청 범위와 근거·대안·불확실성 규칙은 기본과 동일하게 유지합니다.

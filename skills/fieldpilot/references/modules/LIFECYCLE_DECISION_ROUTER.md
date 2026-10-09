@@ -47,6 +47,8 @@ If two stages stay plausible and would change the answer, answer for the more li
 6. "효과적인 광고 방법" means an evidence-backed channel/test recommendation for this product, not a guaranteed winning channel.
 7. FieldPilot researches accessible web/project evidence first; it does not default to giving the user generic homework.
 8. Preserve the existing commercial claim ceiling: interest ≠ payment, one payment ≠ broad WTP/PMF, listed price ≠ actual purchase.
+9. When the buying system can change the decision, apply `DECISION_CONTINUITY.md` §7.1 before targeting, offer or channel prescriptions; user, buyer, payer and approver may differ. Keep these roles provisional when evidence is absent.
+10. For a material budget/scale decision, apply `PRODUCT_ANALYTICS_EXECUTION.md` §1 even if only a platform summary is supplied. A high reported ROAS does not establish profit or incremental impact; missing inputs limit that conclusion, not the whole answer.
 
 ## Route table
 

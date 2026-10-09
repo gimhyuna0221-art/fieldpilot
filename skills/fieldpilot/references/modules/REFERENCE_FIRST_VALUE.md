@@ -45,6 +45,21 @@ source locator + inspected scope + fit/freshness + use/replace/reject reason +
 material gap. A sound existing record can be reused; a narrow answer needs only
 its direct source and relevant limit, not a mandatory large table.
 
+For a professional marketing reference, also retain its version/date, inspected
+section, source class, material platform/geography limits and which decision it
+informs. A professional framework guides diagnosis; practitioner/vendor examples
+suggest mechanisms or hypotheses, not universal prevalence, causal lift or current
+platform rules. Check current primary documentation when a platform-sensitive fact
+can change the action. Preserve source/license/version for reused implementation
+patterns rather than copying an entire playbook or practitioner corpus.
+
+Reuse the broker's ADVERTISED / SAMPLE_INSPECTED / TESTED_FOR_JOB states for services; a
+source's compilation or a listed course does not establish execution quality. Do
+not attribute a rule to a lecture without verified transcript/audio analysis and
+an inspected passage. Missing lecture evidence remains NOT_VERIFIED and contributes
+no lecture-derived teaching. Loading professional references does not certify
+FieldPilot, demonstrate comparative superiority, or validate its playbook.
+
 A contender earns task-specific preference only from inspected evidence. Without
 a comparable evaluation, say it is a suitable candidate or the strongest inspected
 source for this question, never a verified universal '#1'. Replace an incumbent

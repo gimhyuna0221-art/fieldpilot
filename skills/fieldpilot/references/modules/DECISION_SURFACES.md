@@ -79,6 +79,15 @@ A paid deposit/preorder may establish that scoped transaction; record refundable
 terms, fulfillment and cancellation status. One payment does not establish broad
 WTP, repeat demand or PMF. Preserve actual product inspection and WHY_SWITCH_OR_NOT.
 
+Within MONEY_SHAPE, apply `DECISION_CONTINUITY.md` §7.1 to the material user, buyer,
+payer and approver. Tie the offer's outcome, deliverable, exclusions and proof to
+the trigger and current alternative. A proposed message is not observed preference.
+Keep competitor price, stated interest, qualified inquiry, paid transaction and
+repeat usage as different observations; a qualified inquiry may expose a buying
+process, but never silently upgrades to payment evidence. Reuse existing commercial
+rungs rather than creating a second demand ladder. For profit/scale judgments,
+apply `PRODUCT_ANALYTICS_EXECUTION.md` §1; missing cost inputs remain UNKNOWN.
+
 ## TOP_KILLERS / CHANGE_OPTIONS
 
 For a consequential broad judgment, select 1–3 decisive risks/unknowns: what could
@@ -104,6 +113,28 @@ Choose a falsifiable threshold proportionate to this decision; missing baseline
 means proposed, not statistically proven. Name who prepares/executes it. FieldPilot
 prepares accessible materials now; actual outreach, posting or charging remains
 subject to the user's authorization. Skipping a test preserves the bounded answer.
+
+Specify whether the test is an optimization/feasibility decision or a causal-impact
+claim. Where causal inference is intended, record the eligible unit/population,
+treatment, comparator, assignment, confounds, analysis and guardrails needed to
+support it; otherwise keep conclusions observational. Explain sample and duration
+from the outcome's natural window, baseline/precision needs and feasible exposure.
+No fixed sample size, duration or success percentage is universally valid.
+
+This compact summary does not replace the canonical causal-method gates. Before
+designing or admitting a causal-impact claim, load the applicable
+AB_RANDOMIZED_EXPERIMENT or QUASI_EXPERIMENT card in
+`references/methods/experiments.md` (paths are skill-root-relative). Apply its
+predeclaration, integrity/identification, diagnostics and sensitivity requirements;
+failed prerequisites block the causal claim, not a bounded descriptive finding.
+
+Evidence capture requires an actually accessible source, responsible owner or
+handoff, record location, denominator/window and a retrieval/health check. Mark a
+planned mechanism as PLANNED until checked. A filled experiment card is not proof
+that its outcomes can be collected; a test event is not customer payment. If a
+critical event is NOT_OBSERVABLE, repair or hand off the measurement prerequisite
+and keep the dependent result HOLD. Do not assume hidden host conversations or
+unavailable platform logs can supply the missing evidence.
 
 For FIRST_PAID_PROOF the counted event must be actual payment, paid deposit or
 paid preorder for the named offer, with amount/terms/payment locator/refunds where

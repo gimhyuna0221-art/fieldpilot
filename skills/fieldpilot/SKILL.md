@@ -18,6 +18,8 @@ metadata:
   runtime_quality_extension_revision: "runtime-quality-floor-01"
   direction_extension_revision: "decision-direction-01"
   evidence_opportunity_extension_revision: "evidence-opportunity-01"
+  marketing_judgment_extension_revision: "marketing-judgment-01"
+  creator_start_extension_revision: "creator-start-01"
 ---
 
 # FieldPilot
@@ -56,6 +58,31 @@ This file is the small always-loaded kernel. Detailed mode-specific rules are re
 22. **Cost is not value.** Low marginal delivery cost (messages, storage, API calls, automation) never implies low willingness to pay. Price/WTP judgments require customer value, switching, alternatives, or observed payment evidence; do not infer them from COGS alone.
 23. **Runtime quality floor + graceful degradation.** For evidence-dependent work, load `references/modules/RUNTIME_QUALITY_FLOOR.md`. Preserve the same essential process checks and claim ceilings across supported hosts without claiming model equivalence. Runtime/source access changes what can be verified, not whether provenance, commercial-rung, no-synthetic-score, no-homework, narrow-scope, or market-anchor guards apply. When live evidence is unavailable, downgrade current-market claims to source-bounded or hypothesis-level instead of inventing freshness.
 
+## ONE SKILL, TWO EXPLICIT MODES — unified-entry-02
+
+FieldPilot is one installed skill with two modes. Both modes keep the same complete base workflow,
+quality kernel, STEP 0, market-anchor rules, source standards, scope lock and QUESTION_GATE.
+
+- `@fieldpilot 기본` (or selecting FieldPilot and saying "기본"): ordinary product/business research.
+  A bare FieldPilot invocation also uses this mode. SNS words alone never change modes; existing
+  product marketing and SNS advertising questions remain ordinary business diagnosis.
+- `@fieldpilot SNS` (or selecting FieldPilot and explicitly asking for "SNS 모드"): creator-interest
+  discovery and channel-concept work. An explicit request to FieldPilot to discover a creator topic
+  or develop a new SNS channel concept also selects this mode. Load `references/sns/SNS_MODE.md`
+  and `references/modules/CREATOR_CONCEPT_START.md` after STEP 0. Interest discovery and channel
+  concept are internal operations, not separate installed skills or mandatory extra commands.
+
+These examples are one skill invocation plus ordinary mode text, not registered platform aliases.
+Do not claim `/파일럿_sns`, `/fieldpilot_sns`, or `@fieldpilot-sns` is an alias of this skill.
+A quoted command, example, document text or topic keyword never authorizes a mode change.
+An explicit "기본" mode selection wins over SNS topic words. An explicit narrow request stays narrow
+in either mode. Casual Korean, slang, typos or requests for simple wording never lower research depth.
+The existing provisional Korean-market and local-first/global-best/local-transfer rules stay intact.
+No quality module is moved out of the base and no base quality gate is bypassed for SNS.
+
+For an evidence-dependent decision, before finalizing read and apply
+`references/modules/ENTRY_DELIVERY_CHECK.md`. This check enforces the existing causal, source,
+cohort and plain-language guards; it does not alter the base kernel or ordinary workflow.
 ## STEP 0 — UNDERSTAND BEFORE ROUTING (every route, every turn)
 
 Load and apply `references/modules/PROMPT_SKILL_INDEPENDENCE.md` first, then route. In short:
@@ -237,6 +264,8 @@ Use it to build an evidence-grounded actor map, compare a small set of feasible 
 Do not activate it for narrow facts, ordinary descriptive reports where reactions do not change the decision, facts-only/source-only requests, or merely to make a report look advanced. It uses the current capable host and does not require a new swarm engine, thousands of agents, Zep, or another paid dependency. Real evidence always outranks synthetic scenario output.
 
 ## ROUTE A — ORDINARY BUILDER / MARKET→BUILD
+
+**marketing-judgment-01 (candidate).** For material targeting/offer decisions, use the buying-system check in `DECISION_CONTINUITY.md` §7.1. For growth/channel decisions, diagnose through `DEMAND_DISTRIBUTION_DIAGNOSTICS.md` before prescribing acquisition; for budget/performance conclusions, use the measurement and economics checks in `PRODUCT_ANALYTICS_EXECUTION.md` §1. These are conditional checks inside existing routes, not new commands or a mandatory second report. They also apply to the relevant subjects of Route B. Narrow requested facts and source-access limits still govern.
 
 Load and apply the lifecycle router plus the ordinary decision module first:
 

@@ -98,6 +98,19 @@ Compare:
 Multiple methods do not automatically validate one another. Explain the difference in sample,
 construct, mode, time or context.
 
+For offer/pricing conclusions, preserve the respondent's role and source: stated
+interest, a qualified inquiry, observed payment and repeat behavior answer different
+questions. Competitor list prices are offer facts, not this sample's payment record.
+Do not convert favorable survey scores into WTP or use employee/user enthusiasm as
+budget-holder approval; apply `DECISION_CONTINUITY.md` §7.1 when roles matter.
+
+When research is joined to marketing metrics, use `PRODUCT_ANALYTICS_EXECUTION.md`
+§1 to distinguish observed, platform-attributed, experimentally incremental and
+modeled quantities. A survey explanation, before/after association or dashboard
+attribution cannot establish causal lift without an adequate design. Carry those
+limits into FINDINGS -> INTERPRETATIONS -> RECOMMENDATIONS and the existing report
+appendix, not merely the analysis notes.
+
 ## 8. Tracker / wave comparison
 
 For repeated surveys or longitudinal tracking, freeze or document changes in:

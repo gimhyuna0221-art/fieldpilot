@@ -12,6 +12,11 @@ For keyword or traffic providers, check modeled versus observed data, coverage, 
 
 Keep observed query relationships, algorithmic clusters and interpreted intentions in separate fields. Record seed, direction and sorting/filter settings when interpreting a path tool. A search-engine relationship graph is not necessarily individual-level clickstream, even when the product calls it a path.
 
+Use search intent as one input to channel fit, not proof of this offer's demand.
+Connect query/landing fit to the relevant buyer, promise, trust and conversion path
+through `FREE_FIRST_AND_CHANNEL_ROUTING.md`. Search demand cannot resolve a broken
+activation, booking or payment path; use the existing diagnostics for that symptom.
+
 ## Competitor change analysis
 
 Save source URL, observed time, affected product/plan/geography, quoted or summarized fact and prior snapshot. Diff meaning: price, included limits, audience, distribution or claim, not page layout. A changed webpage is not proof customers adopted the change. Distinguish new observation from a change that occurred on a verified date.

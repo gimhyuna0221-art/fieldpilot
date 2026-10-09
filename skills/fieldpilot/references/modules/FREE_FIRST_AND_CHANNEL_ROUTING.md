@@ -43,6 +43,19 @@ product_stage
 
 There is no universal channel ranking.
 
+For each serious candidate, connect the existing inputs to evidence of target
+presence, trigger/intent, trust mechanism, usable format, conversion path,
+measurability, cost structure, operational load and material platform risk. Keep
+source/assumption and a disconfirming signal beside the fit reason. Popularity or
+a practitioner's success story alone is not channel fit. Paid and organic versions
+can have different intent, economics and operating burden on the same platform.
+
+Use those comparisons in the existing WHY / PREREQUISITES / FAILURE_INTERPRETATIONS
+fields; do not create an obligatory channel matrix. Apply the buying-system check
+in `DECISION_CONTINUITY.md` §7.1 when the reached user is not the buyer. Diagnose
+post-launch symptoms through `DEMAND_DISTRIBUTION_DIAGNOSTICS.md` before recommending
+scale; preserve an explicitly limited request for channel facts/options.
+
 ### Operational-advice provenance guard
 
 Channel mechanics, algorithm behavior, community norms, timing advice, format claims,
